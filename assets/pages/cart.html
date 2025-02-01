@@ -12,7 +12,6 @@
 </head>
 
 <body>
-
     <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container-fluid">
             <a class="navbar-logo" href="/index.html"></a>
@@ -48,7 +47,57 @@
             </div>
         </div>
     </nav>
+    <section class="Main container-lg d-flex flex-column">
+        <div class="submissionerror">
+            <p>There was an error submitting your order. Please try again.</p>
+            <button class="error-btn rounded-pill" onclick="hideError()">Close</button>
+            <button class="home-btn rounded-pill" onclick="goHome()">Home</button>
+        </div>
+        <div class="submissionsuccess">
+            <p>Your order has been successfully placed!</p>
+            <button class="success-btn rounded-pill" onclick="hideSuccess()">Close</button>
+            <button class="home-btn rounded-pill" onclick="goHome()">Home</button>
+        </div>
+        <button class="clearcart rounded-pill" onclick="clearCart()">Clear Cart</button>
+        <p class="title">Droid Secure Checkout</p>
 
+        <div class="cart-container d-flex flex-column">
+            <div class="itemdesc d-flex flex-column">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Product</th>
+                            <th>Description</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cart-items"></tbody>
+                </table>
+            </div>
+            <div class="cartform d-flex flex-column">
+                <p class="title">Enter Your Details</p>
+                <form id="checkout-form">
+                    <div class="textwrapper">
+                        <input type="text" id="name-input" placeholder="Full Name"><br>
+                        <p id="name-error"></p>
+                    </div>
+                    <div class="textwrapper">
+                        <input type="email" id="email-input" placeholder="Email"><br>
+                        <p id="email-error"></p>
+                    </div>
+                    <div class="textwrapper">
+                        <input type="tel" id="phone-input" placeholder="Phone Number"><br>
+                        <p id="phone-error"></p>
+                    </div>
+                    <button class="button" type="submit">Submit Order</button>
+                    <p class="title fs-5">We will be in touch with you shortly.</p>
+                </form>
+            </div>
+
+
+        </div>
+    </section>
     <footer class="footer mt-auto">
         <div class="container-fluid d-flex justify-content-between">
             <a href="index.html" class="main p-1">D.Roid Secure</a>
@@ -69,5 +118,8 @@
     crossorigin="anonymous"></script>
 <script src="/assets/js/main.js"></script>
 <script src="/assets/js/utils.js"></script>
+<script>
+    displayCart();
+</script>
 
 </html>
