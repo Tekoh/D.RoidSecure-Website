@@ -143,3 +143,7 @@ function hideSuccess() {
 function goHome() {
     window.location.href = "/index.html";
 }
+
+function goCart() {
+    window.location.href = "/assets/pages/cart.html";
+}

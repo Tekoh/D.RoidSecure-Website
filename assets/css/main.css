@@ -193,6 +193,29 @@ body.dark-mode {
         background-size: contain;
     }
 
+    .cart-toggle {
+        background: none;
+        border: none;
+        outline: none;
+        box-shadow: none;
+        position: relative;
+        content: "";
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        background: url(/assets/icons/cart.svg) no-repeat center;
+        background-size: contain;
+        margin: 5px;
+        margin-left: 10px;
+        margin-right: 10px;
+        @media screen and (max-width: 1000px) {
+            display: fixed;
+            bottom: 230px;
+            left: 90%;
+            
+        }
+    }
+
     @media screen and (max-width: 1000px) {
 
         .nav-searchbar {
