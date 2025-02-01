@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+body.light-mode {
+    --text: #1E293B;
+    --background: #F8FAFC;
+    --primary: #0EA5E9;
+    --highlight: #F59E0B;
+}
+
+body.dark-mode {
+    --text: #F8FAFC;
+    --background: #1E293B;
+    --primary: #0EA5E9;
+    --highlight: #F59E0B;
+}
+
+
+/* var () */
