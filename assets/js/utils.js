@@ -1,4 +1,26 @@
 
+//Scroll Check Function
+
+document.addEventListener("DOMContentLoaded", function() {
+    const sections = document.querySelectorAll('div');
+
+    function checkVisibility() {
+        const windowHeight = window.innerHeight;
+
+        sections.forEach(section => {
+            const rect = section.getBoundingClientRect();
+            if (rect.top < windowHeight * 0.8 && rect.bottom >= 0) {
+                section.classList.add('visible');
+            }
+        });
+    }
+
+    checkVisibility();
+
+    window.addEventListener('scroll', checkVisibility);
+});
+
+
 // Setting Active Page Local Function
 
 document.addEventListener('DOMContentLoaded', function () {

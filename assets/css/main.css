@@ -4,7 +4,7 @@ body {
     --text: #333333;
     --background: #F8FAFC;
     --primary: #0EA5E9;
-    --highlight: #F59E0B;
+    --highlight: #0ea4e980;
     background-color: var(--background);
     color: var(--text);
     font-family: 'Fira Code', monospace;
@@ -14,7 +14,7 @@ body.dark-mode {
     --background: #333333;
     --text: #F8FAFC;
     --primary: #0EA5E9;
-    --highlight: #F59E0B;
+    --highlight: #0ea4e980;
 }
 
 body.dark-mode {
@@ -52,6 +52,35 @@ body.dark-mode {
         right: 5px;
     }
 }
+
+
+.EmergencyBar {
+    background-color: #0EA5E9;
+    font-weight: bold;
+
+    .emergency {
+        color: #F8FAFC;
+        background-color: #ff0000   ;
+        padding: 10px;
+    }
+
+
+    .emergency:hover {
+        background-color: #0EA5E9;
+        color: var(--text);
+    }
+
+    .no {
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    .no:hover {
+        color: #ff0000;
+        padding: 10px;
+    }
+}
+
 
 .navbar {
     background-color: var(--background);
@@ -183,7 +212,7 @@ body.dark-mode {
     }
 }
 
-.DRoid-Footer {
+.footer {
     border-top: 1px solid var(--primary);
 
     .copyright {
@@ -249,4 +278,197 @@ body.dark-mode {
     }
 
 }
+
+.Hero {
+    position: relative;
+    background: url('/assets/images/cyber-shield-csc_r7toxr.jpg') center/cover no-repeat;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #F8FAFC;
+
+    @media screen and (max-width: 1000px) {
+        height: 300px;
+    }
+
+    .HeroOverlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(14, 165, 233, 0.50);
+    }
+
+    .HeroText {
+        position: relative;
+        z-index: 1;
+        font-size: 80px;
+        font-weight: bold;
+        font-family: 'Fira Code', monospace;
+
+        @media screen and (max-width: 1000px) {
+            font-size: 40px;
+        }
+    }
+
+    .HeroSubText {
+        position: relative;
+        z-index: 1;
+        margin-top: 100px;
+        color: #F8FAFC;
+        font-family: 'Fira Code', monospace;
+        font-size: 20px;
+        font-weight: bolder;
+        background-color: rgba(14, 165, 233, 0.25);
+
+        @media screen and (max-width: 1000px) {
+            margin-top: 10px;
+            font-size: 15px;
+            width: 90%;
+        }
+    }
+}
+
+.Info {
+    max-width: 100%;
+    margin: auto;
+
+    div {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity 1s ease-out, transform 1s ease-out;
+    }
+    
+    div.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    a {
+        text-decoration: none;
+        color: var(--primary);
+        transition: ease 0.5s;
+    }
+
+    a:hover {
+        text-decoration: none;
+        color: var(--highlight);
+        transition: ease 0.5s;
+    }
+
+    .Text {
+        font-family: 'Fira Code', monospace;
+        color: var(--text);
+        border-bottom: 2px solid var(--highlight);
+        margin: 20px;
+        padding: 60px;
+
+        @media screen and (max-width: 1000px) {
+            padding: 10px;
+            margin: 5px;
+        }
+
+        .Text__Title {
+            color: var(--highlight);
+            font-size: 36px;
+            font-weight: bold;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 40px;
+
+            @media screen and (max-width: 1000px) {
+                font-size: 28px;
+                padding: 10px;
+            }
+        }
+
+        .Text__Body {
+            font-size: 20px;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-left: 200px;
+            margin-right: 200px;
+            line-height: 40px;
+
+            @media screen and (max-width: 1000px) {
+                font-size: 20px;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            padding-left: 100px;
+
+            @media screen and (max-width: 1000px) {
+                padding-left: 0px;
+            }
+        }
+
+        .card-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .card {
+            background: var(--background);
+            border-radius: 0px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(9.8px);
+            border: 1px solid var(--primary);
+            color: var(--text);
+            margin: 15px;
+            transition: ease 0.5s;
+
+            @media screen and (max-width: 1000px) {
+                font-size: 13px;
+            }
+        }
+
+        .card:hover {
+            border: 1px solid #4949494f;
+            transition: ease 0.5s;
+        }
+
+        .Button {
+            background-color: var(--background);
+            border: 1px solid var(--primary);
+            color: var(--text);
+            padding: 10px;
+            margin: 5px;
+            transition: ease 0.5s;
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+
+
+        }
+
+        .Button:hover {
+            background-color: var(--primary);
+            border: 1px solid var(--background);
+            color: var(--background);
+            transition: ease 0.5s;
+        }
+
+        .card-photo {
+            width: 100%;
+            height: 200px;
+
+            object-fit: cover;
+        }
+
+    }
+
+}
+
 
