@@ -1,15 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 
-body.light-mode {
-    --text: #1E293B;
+body {
+    --text: #333333;
     --background: #F8FAFC;
     --primary: #0EA5E9;
     --highlight: #F59E0B;
+    background-color: var(--background);
+    color: var(--text);
+    font-family: 'Fira Code', monospace;
 }
 
 body.dark-mode {
+    --background: #333333;
     --text: #F8FAFC;
-    --background: #1E293B;
     --primary: #0EA5E9;
     --highlight: #F59E0B;
 }
