@@ -4,7 +4,7 @@ body {
     --text: #333333;
     --background: #F8FAFC;
     --primary: #0EA5E9;
-    --highlight: #F59E0B;
+    --highlight: #0ea4e980;
     background-color: var(--background);
     color: var(--text);
     font-family: 'Fira Code', monospace;
@@ -14,5 +14,75 @@ body.dark-mode {
     --background: #333333;
     --text: #F8FAFC;
     --primary: #0EA5E9;
-    --highlight: #F59E0B;
+    --highlight: #0ea4e980;
+}
+
+.MainBody {
+    height: 100vh;
+    div {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity 1s ease-out, transform 1s ease-out;
+    }
+    
+    div.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .Hero {
+        position: relative;
+        background: url('/assets/images/Hero_About.jpg') center/cover no-repeat;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: #F8FAFC;
+        margin-bottom: 100px;
+
+        @media screen and (max-width: 1000px) {
+            height: 300px;
+        }
+
+        .HeroOverlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(14, 165, 233, 0.50);
+        }
+
+        .HeroText {
+            position: relative;
+            z-index: 1;
+            font-size: 70px;
+            font-weight: bold;
+            font-family: 'Fira Code', monospace;
+
+            @media screen and (max-width: 1000px) {
+                font-size: 40px;
+            }
+        }
+
+        .HeroSubText {
+            position: relative;
+            z-index: 1;
+            margin-top: 100px;
+            color: #F8FAFC;
+            font-family: 'Fira Code', monospace;
+            font-size: 20px;
+            font-weight: 600;
+            background-color: rgba(14, 165, 233, 0.25);
+            width: 80%;
+
+            @media screen and (max-width: 1000px) {
+                margin-top: 10px;
+                font-size: 15px;
+                width: 90%;
+            }
+        }
+    }
 }

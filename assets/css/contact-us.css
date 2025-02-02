@@ -4,7 +4,7 @@ body {
     --text: #333333;
     --background: #F8FAFC;
     --primary: #0EA5E9;
-    --highlight: #F59E0B;
+    --highlight: #0ea4e980;
     background-color: var(--background);
     color: var(--text);
     font-family: 'Fira Code', monospace;
@@ -14,5 +14,5 @@ body.dark-mode {
     --background: #333333;
     --text: #F8FAFC;
     --primary: #0EA5E9;
-    --highlight: #F59E0B;
+    --highlight: #0ea4e980;
 }

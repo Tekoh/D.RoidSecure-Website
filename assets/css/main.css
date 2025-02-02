@@ -40,7 +40,7 @@ body.dark-mode {
         margin: 5px;
     }
 
-    .main::before {
+    .footer .main::before {
         content: "";
         display: inline-block;
         width: 24px;
@@ -304,7 +304,7 @@ body.dark-mode {
 
 .Hero {
     position: relative;
-    background: url('/assets/images/cyber-shield-csc_r7toxr.jpg') center/cover no-repeat;
+    background: url('/assets/images/Hero_Main.webp') center/cover no-repeat;
     height: 600px;
     display: flex;
     flex-direction: column;

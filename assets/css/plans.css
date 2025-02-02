@@ -19,7 +19,7 @@ body.dark-mode {
 
 .Hero {
     position: relative;
-    background: url('/assets/images/cybersecplans.jpg') center/cover no-repeat;
+    background: url('/assets/images/Hero_Plans.webp') center/cover no-repeat;
     height: 400px;
     display: flex;
     flex-direction: column;
