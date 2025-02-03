@@ -312,6 +312,7 @@ body.dark-mode {
     justify-content: center;
     text-align: center;
     color: #F8FAFC;
+    background-attachment: fixed;
 
     @media screen and (max-width: 1000px) {
         height: 300px;

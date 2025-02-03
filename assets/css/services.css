@@ -28,6 +28,7 @@ body.dark-mode {
     text-align: center;
     color: #F8FAFC;
     margin-bottom: 100px;
+    background-attachment: fixed;
 
     @media screen and (max-width: 1000px) {
         height: 300px;
@@ -116,7 +117,7 @@ body.dark-mode {
         
         margin-bottom: 150px;
         .Services {
-            padding: 100px;
+            padding: 50px;
             &:not(:last-child) {
                 border-bottom: 2px solid var(--highlight);
             }
