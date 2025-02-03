@@ -64,9 +64,20 @@
                 start-ups to established enterprises.</p>
             <p class="disclaimer">Choose your security plan now—before hackers choose you. Stay protected before an
                 attack strikes</p>
-
         </section>
         <section class="Plans d-flex flex-row justify-content-lg-center flex-wrap">
+            <div class="toast-container position-fixed top-0 end-0 p-3 m-5">
+                <div id="cartToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                    <div class="toast-header">
+                        <strong class="me-auto">Cart</strong>
+                        <button type="button" class="btn-close" data-bs-dismiss="toast"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="toast-body">
+                        <span id="itemname"></span> added to cart!
+                    </div>
+                </div>
+            </div>
             <div class="card" style="width: 22rem; min-height: 35rem;">
                 <img src="/assets/images/CipherGuard.png" class="card-photo" alt="Cipher Guard Plan">
                 <div class="card-body text-start">
@@ -81,8 +92,9 @@
                         <li><span class="text-dark">&#10003;</span> Dark Web Scans</li>
                         <li><span class="text-dark">&#10003;</span> Minimum Security Support (8am - 6pm)</li>
                         <button class="card-buy rounded-pill"
-                            onclick="addToCart('Cipher Guard', 'This plan offers managed antivirus, web security, dark web scans, and minimum security support from 8am to 6pm, ideal for startups with low compliance requirements and higher risk tolerance.', 20.25, 'CipherGuard.png')">Buy
+                            onclick="addToCart('Cipher Guard', 'This plan offers managed antivirus, web security, dark web scans, and minimum security support from 8am to 6pm, ideal for startups with low compliance requirements and higher risk tolerance.', 20.25, 'CipherGuard.png'); ">Buy
                             Now</button>
+                    </ul>
                 </div>
             </div>
             <div class="card" style="width: 22rem; min-height: 35rem;">

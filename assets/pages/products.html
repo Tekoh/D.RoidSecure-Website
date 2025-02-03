@@ -173,6 +173,17 @@
             </div>
         </section>
         <section class="Products d-flex flex-row justify-content-lg-center flex-wrap">
+            <div class="toast-container position-fixed top-0 end-0 p-3 m-5">
+                <div id="cartToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                    <div class="toast-header">
+                        <strong class="me-auto">Cart</strong>
+                        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
+                    <div class="toast-body">
+                        <span id="itemname"></span> added to cart!
+                    </div>
+                </div>
+            </div>
             <div class="Title">
                 <p class="maintitle">Phantom Guard</p>
                 <p class="subtitle">PhantomGuard delivers cutting-edge endpoint protection and AI-driven threat hunting
@@ -213,7 +224,8 @@
                 </div>
             </div>
             <div class="card" style="width: 22rem; min-height: 35rem;">
-                <img src="/assets/images/PhantomGuard-Enterprise.png" class="card-photo" alt="PhantomGuard Enterprise Plan">
+                <img src="/assets/images/PhantomGuard-Enterprise.png" class="card-photo"
+                    alt="PhantomGuard Enterprise Plan">
                 <div class="card-body text-start">
                     <h5 class="card-title">Enterprise</h5>
                     <h6 class="card-title">£499.99/month</h6>

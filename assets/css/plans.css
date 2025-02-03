@@ -17,6 +17,7 @@ body.dark-mode {
     --highlight: #0ea4e980;
 }
 
+
 .Hero {
     position: relative;
     background: url('/assets/images/Hero_Plans.webp') center/cover no-repeat;

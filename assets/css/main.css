@@ -81,6 +81,11 @@ body.dark-mode {
     }
 }
 
+.toast, .toast-header, .toast-body {
+    color: var(--text);
+    background-color: var(--background);
+}
+
 
 .navbar {
     background-color: var(--background);

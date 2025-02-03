@@ -147,3 +147,10 @@ function goHome() {
 function goCart() {
     window.location.href = "/assets/pages/cart.html";
 }
+
+function showToast(name) {
+    var toastEl = document.getElementById('cartToast');
+    var toast = new bootstrap.Toast(toastEl);
+    document.getElementById('itemname').innerHTML = name;
+    toast.show();
+}
