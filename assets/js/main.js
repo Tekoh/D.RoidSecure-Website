@@ -33,8 +33,8 @@ function displayCart() {
         });
         cartTable.innerHTML += `
             <tr>
-                <td colspan="3" style="text-align:right;"><strong>Your total is:</strong></td>
-                <td>£${cart.reduce((total, item) => total + item.price, 0).toFixed(2)}</td>
+            <td colspan="1" class="clear-cart" onclick="clearCart()" style="cursor: pointer;"><u>Clear Cart</u></td>
+            <td colspan="4" style="text-align:right; padding: 10px;"><strong>Your total is:</strong> <u><i>£${cart.reduce((total, item) => total + item.price, 0).toFixed(2)}</i></u></td>
             </tr>
         `;
     }
@@ -47,12 +47,18 @@ document.getElementById("checkout-form").addEventListener("submit", function (ev
     let name = document.getElementById("name-input").value;
     let email = document.getElementById("email-input").value;
     let phone = document.getElementById("phone-input").value;
-
-    if (!isFormValid(name, email, phone)) {
-        showError();
-    } else {
-        showSuccess();
-        localStorage.removeItem("cart");
-    }
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    if (cart.length === 0) {
+        document.getElementById('error-field').innerHTML = 'You have no items in your cart';
+        showOverlay();
+    } else
+        if (!isFormValid(name, email, phone)) {
+            document.getElementById('error-field').innerHTML = 'Please fill in all fields correctly';
+            showOverlay();
+        } else {
+            document.getElementById('error-field').innerHTML = 'Order successfully placed!';
+            showOverlay();
+            localStorage.removeItem("cart");
+        }
 });
 

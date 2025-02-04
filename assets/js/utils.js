@@ -121,21 +121,14 @@ function isFormValid() {
     return true;
 }
 
-// Form Submission Error Showup 
+// Form Submission Overlay
 
-function showError() {
-    document.querySelector(".submissionerror").classList.add("active");
+function showOverlay() {
+    document.querySelector(".submission").classList.add("active");
 }
 
-function hideError() {
-    document.querySelector(".submissionerror").classList.remove("active");
-}
-// Form Submission Success Showup
-function showSuccess() {
-    document.querySelector(".submissionsuccess").classList.add("active");
-}
-function hideSuccess() {
-    document.querySelector(".submissionsuccess").classList.remove("active");
+function hideOverlay() {
+    document.querySelector(".submission").classList.remove("active");
 }
 
 // Redirect to Home Page Function

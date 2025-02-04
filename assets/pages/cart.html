@@ -49,17 +49,11 @@
         </div>
     </nav>
     <section class="Main container-lg d-flex flex-column">
-        <div class="submissionerror">
-            <p>There was an error submitting your order. Please try again.</p>
-            <button class="error-btn rounded-pill" onclick="hideError()">Close</button>
+        <div class="submission">
+            <p id="error-field"></p>
+            <button class="hide-btn rounded-pill" onclick="hideOverlay ()">Close</button>
             <button class="home-btn rounded-pill" onclick="goHome()">Home</button>
         </div>
-        <div class="submissionsuccess">
-            <p>Your order has been successfully placed!</p>
-            <button class="success-btn rounded-pill" onclick="hideSuccess()">Close</button>
-            <button class="home-btn rounded-pill" onclick="goHome()">Home</button>
-        </div>
-        <button class="clearcart rounded-pill" onclick="clearCart()">Clear Cart</button>
         <p class="title">Droid Secure Checkout</p>
 
         <div class="cart-container d-flex flex-column">

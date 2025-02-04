@@ -20,7 +20,7 @@ body.dark-mode {
 .Main {
     min-height: 100vh;
 
-    .submissionerror {
+    .submission {
         display: none;
     }
 
@@ -28,7 +28,7 @@ body.dark-mode {
         display: none;
     }
 
-    .submissionerror.active {
+    .submission.active {
         position: fixed;
         top: 0;
         left: 0;
@@ -42,7 +42,7 @@ body.dark-mode {
         font-size: 30px;
         font-weight: 600;
         
-        .error-btn {
+        .hide-btn {
             background-color: var(--background);
             border: 1px solid var(--primary);
             color: var(--text);
@@ -53,62 +53,10 @@ body.dark-mode {
             position: fixed;
             bottom: 40%;
             left: 50%;
-
-            &:hover {
-                background-color: var(--primary);
-                border: 1px solid var(--background);
-                color: var(--background);
-                padding: 2px 10px;
-                transition: ease-in 0.3s;
+            @media screen and (max-width: 1000px) {
+                bottom: 30%;
+                left: 10%;
             }
-        }
-        .home-btn {
-            background-color: var(--background);
-            border: 1px solid var(--primary);
-            color: var(--text);
-            padding: 2px 10px;
-            transition: ease-in 0.3s;
-            font-size: 20px;
-            width: 100px;
-            position: fixed;
-            bottom: 30%;
-            left: 50%;
-
-            &:hover {
-                background-color: var(--primary);
-                border: 1px solid var(--background);
-                color: var(--background);
-                padding: 2px 10px;
-                transition: ease-in 0.3s;
-            }
-        }
-    }
-
-    .submissionsuccess.active {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(14, 164, 233, 0.5);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: 1000;
-        font-size: 30px;
-        font-weight: 600;
-        
-        .success-btn {
-            background-color: var(--background);
-            border: 1px solid var(--primary);
-            color: var(--text);
-            padding: 2px 10px;
-            transition: ease-in 0.3s;
-            font-size: 20px;
-            width: 100px;
-            position: fixed;
-            bottom: 40%;
-            left: 50%;
 
             &:hover {
                 background-color: var(--primary);
@@ -150,22 +98,12 @@ body.dark-mode {
         color: var(--primary);
     }
 
-    .clearcart {
-        background-color: var(--background);
-        border: 1px solid var(--primary);
-        color: var(--text);
-        padding: 2px 10px;
-        transition: ease-in 0.3s;
-        width: 150px;
-        position: absolute;
-        right: 50px;
-        top: 70px;
+    .clear-cart {
+        cursor: pointer;
+        font-size: 15px;
         &:hover {
-            background-color: var(--primary);
-            border: 1px solid var(--background);
-            color: var(--background);
-            padding: 2px 10px;
-            transition: ease-in 0.3s;
+            color: var(--primary);
+            position: relative;
         }
     }
 
@@ -175,6 +113,19 @@ body.dark-mode {
         align-items: center;
         text-align: center;
         margin: 50px;
+        @media screen and (max-width: 1000px) {
+            font-size: 15px;
+            img {
+                width: 150px;
+                height: 150px;
+            }
+            margin: 5px;
+            flex-wrap: wrap;
+            th:nth-child(3), td:nth-child(3) {
+                display: none;
+                }
+
+        }
 
         th {
             padding: 10px;
@@ -203,6 +154,10 @@ body.dark-mode {
         align-items: center;
         text-align: center;
         margin: 50px;
+        @media screen and (max-width: 1000px) {
+            margin: 10px;
+
+        }
 
         .textwrapper {
             padding: 5px;
@@ -216,6 +171,9 @@ body.dark-mode {
                 background-color: var(--background);
                 color: var(--text);
                 width: 500px;
+                @media screen and (max-width: 1000px) {
+                    width: 90%;
+                }
                 &:focus {
                     background-color: var(--text);
                     color: var(--background);
