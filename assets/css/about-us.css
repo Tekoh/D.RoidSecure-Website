@@ -17,19 +17,7 @@ body.dark-mode {
     --highlight: #0ea4e980;
 }
 
-.MainBody {
-    height: 100vh;
-    div {
-        opacity: 0;
-        transform: translateY(30px);
-        transition: opacity 1s ease-out, transform 1s ease-out;
-    }
-    
-    div.visible {
-        opacity: 1;
-        transform: translateY(0);
-    }
-
+.Main-Body {
     .Hero {
         position: relative;
         background: url('/assets/images/Hero_About.jpg') center/cover no-repeat;
@@ -40,7 +28,7 @@ body.dark-mode {
         justify-content: center;
         text-align: center;
         color: #F8FAFC;
-        margin-bottom: 100px;
+        margin-bottom: 50px;
         background-attachment: fixed;
 
         @media screen and (max-width: 1000px) {
@@ -86,4 +74,55 @@ body.dark-mode {
             }
         }
     }
+    
+}
+
+.Main-Wrapper {
+    div {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity 1s ease-out, transform 1s ease-out;
+    }
+    
+    div.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    .Main-Body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 30px;
+        padding-bottom: 50px;
+        &:not(:last-child) {
+            border-bottom: 2px solid var(--highlight);
+        }
+
+        .Title {
+            font-size: 40px;
+            font-weight: bold;
+            margin: 30px;
+            font-family: 'Fira Code', monospace;
+            background: linear-gradient(-30deg, var(--primary), var(--highlight));
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .Text {
+            font-size: 18px;
+            font-family: 'Fira Code', monospace;
+            margin: 15px;
+            color: var(--text);
+        }
+
+        .Sub-Title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            font-family: 'Fira Code', monospace;
+            color: var(--highlight);
+            font-style: italic;
+        }
+    }
+
 }
