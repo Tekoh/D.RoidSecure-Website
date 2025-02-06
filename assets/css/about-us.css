@@ -17,112 +17,57 @@ body.dark-mode {
     --highlight: #0ea4e980;
 }
 
-.Main-Body {
-    .Hero {
-        position: relative;
-        background: url('/assets/images/Hero_About.jpg') center/cover no-repeat;
-        height: 400px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        color: var(--primary);
-        margin-bottom: 50px;
-        background-attachment: fixed;
-
-        @media screen and (max-width: 1000px) {
-            height: 300px;
-        }
-
-        .HeroOverlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(14, 165, 233, 0.50);
-        }
-
-        .HeroText {
-            position: relative;
-            z-index: 1;
-            font-size: 70px;
-            font-weight: bold;
-            font-family: 'Fira Code', monospace;
-
-            @media screen and (max-width: 1000px) {
-                font-size: 40px;
-            }
-        }
-
-        .HeroSubText {
-            position: relative;
-            z-index: 1;
-            margin-top: 100px;
-            color: #F8FAFC;
-            font-family: 'Fira Code', monospace;
-            font-size: 20px;
-            font-weight: 600;
-            background-color: rgba(14, 165, 233, 0.25);
-            width: 65%;
-
-            @media screen and (max-width: 1000px) {
-                margin-top: 10px;
-                font-size: 15px;
-                width: 90%;
-            }
-        }
-    }
-    
+.Universal__Hero {
+    background: url('/assets/images/Hero_about.jpg') center/cover no-repeat;
+    height: 400px;
+    background-attachment: fixed;
 }
 
-.Main-Wrapper {
-    div {
-        opacity: 0;
-        transform: translateY(30px);
-        transition: opacity 1s ease-out, transform 1s ease-out;
-    }
-    
-    div.visible {
-        opacity: 1;
-        transform: translateY(0);
-    }
-    .Main-Body {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 30px;
-        padding-bottom: 50px;
-        &:not(:last-child) {
-            border-bottom: 2px solid var(--highlight);
-        }
+.AboutMain__Wrapper div {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
 
-        .Title {
-            font-size: 40px;
-            font-weight: bold;
-            margin: 30px;
-            font-family: 'Fira Code', monospace;
-            background: linear-gradient(-30deg, var(--primary), var(--highlight));
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
+.AboutMain__Wrapper div.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
 
-        .Text {
-            font-size: 18px;
-            font-family: 'Fira Code', monospace;
-            margin: 15px;
-            color: var(--text);
-        }
+.AboutMain__Wrapper .AboutMain-Section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
 
-        .Sub-Title {
-            font-size: 20px;
-            font-weight: bold;
-            margin-bottom: 20px;
-            font-family: 'Fira Code', monospace;
-            color: var(--highlight);
-            font-style: italic;
-        }
-    }
+.AboutMain__Wrapper .AboutMain-Section:not(:last-child) {
+    border-bottom: 2px solid var(--highlight);
+}
 
+.AboutMain__Wrapper .AboutMain-Section__Title {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 30px;
+    font-family: 'Fira Code', monospace;
+    background: linear-gradient(-30deg, var(--primary), var(--highlight));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.AboutMain__Wrapper .AboutMain-Section__Text {
+    font-size: 18px;
+    font-family: 'Fira Code', monospace;
+    margin: 15px;
+    color: var(--text);
+}
+
+.AboutMain__Wrapper .AboutMain-Section__Sub-Title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: 'Fira Code', monospace;
+    color: var(--highlight);
+    font-style: italic;
 }

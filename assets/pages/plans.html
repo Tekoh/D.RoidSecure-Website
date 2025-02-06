@@ -12,7 +12,6 @@
 </head>
 
 <body>
-
     <nav class="Universal-Navbar navbar navbar-expand-lg sticky-top">
         <div class="Universal-Navbar__Container container-fluid">
             <a class="Universal-Navbar__Logo navbar-logo" href="/index.html"></a>
@@ -55,23 +54,23 @@
             </div>
         </div>
     </nav>
-    <section class="Hero">
-        <div class="HeroOverlay"></div>
-        <h1 class="HeroText">Managed Cyber Defense Plans</h1>
-        <p class="HeroSubText">Droid Secure offers Managed Cyber Security plans to meets the needs of security conscious
+    <section class="Universal__Hero">
+        <div class="Universal__Hero--Overlay"></div>
+        <h1 class="Universal__Hero--Text">Managed Cyber Defense Plans</h1>
+        <p class="Universal__Hero--SubText">Droid Secure offers Managed Cyber Security plans to meets the needs of security conscious
             businesses.
             The below packages are designed to match your required levels of compliance and risk alignment.</p>
     </section>
-    <section class="Main container-lg d-flex flex-column text-center justify-content-center mx-auto">
-        <section class="Titles">
-            <p class="maintitle">Droid Secure Cyber Security Plans</p>
-            <p class="subtitle">Droid Secure collaborates with top-notch security providers to curate comprehensive
+    <section class="PlansMain container-lg d-flex flex-column text-center justify-content-center mx-auto">
+        <section class="PlansMain__Header">
+            <p class="PlansMain__Header--Title">Droid Secure Cyber Security Plans</p>
+            <p class="PlansMain__Header--SubTitle">Droid Secure collaborates with top-notch security providers to curate comprehensive
                 cyber security plans that cater to the risk and compliance requirements of companies ranging from
                 start-ups to established enterprises.</p>
-            <p class="disclaimer">Choose your security plan now—before hackers choose you. Stay protected before an
+            <p class="PlansMain__Header--Disclaimer">Choose your security plan now—before hackers choose you. Stay protected before an
                 attack strikes</p>
         </section>
-        <section class="Plans d-flex flex-row justify-content-lg-center flex-wrap">
+        <section class="PlansMain__Plans d-flex flex-row justify-content-lg-center flex-wrap">
             <div class="toast-container position-fixed top-0 end-0 p-3 m-5">
                 <div id="cartToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
                     <div class="toast-header">
@@ -83,88 +82,88 @@
                     </div>
                 </div>
             </div>
-            <div class="card" style="width: 22rem; min-height: 35rem;">
-                <img src="/assets/images/CipherGuard.png" class="card-photo" alt="Cipher Guard Plan">
-                <div class="card-body text-start">
-                    <h5 class="card-title">Cipher Guard</h5>
-                    <h6 class="card-title">£20.25/month</h6>
-                    <p class="subtitle card-title">Ideal for start ups</p>
-                    <p class="card-text">Suitable for small companies with low compliance requirements and higher risk
+            <div class="PlansMain__Plans--Card card" style="width: 22rem; min-height: 35rem;">
+                <img src="/assets/images/CipherGuard.png" class="PlansMain__Plans--Photo card-photo" alt="Cipher Guard Plan">
+                <div class="PlansMain__Plans--Card__Body card-body text-start">
+                    <h5 class="PlansMain__Plans--Card__Body--Title card-title">Cipher Guard</h5>
+                    <h6 class="PlansMain__Plans--Card__Body--Title card-title">£20.25/month</h6>
+                    <p class="PlansMain__Plans--Card__Body--Subtitle card-title">Ideal for start ups</p>
+                    <p class="PlansMain__Plans--Card__Body--Text card-text">Suitable for small companies with low compliance requirements and higher risk
                         tolerance.</p>
-                    <ul class="card-text list-unstyled">
+                    <ul class="PlansMain__Plans--Card__Body--List card-text list-unstyled">
                         <li><span class="text-dark">&#10003;</span> Managed AntiVirus</li>
                         <li><span class="text-dark">&#10003;</span> Managed Web Security</li>
                         <li><span class="text-dark">&#10003;</span> Dark Web Scans</li>
                         <li><span class="text-dark">&#10003;</span> Minimum Security Support (8am - 6pm)</li>
-                        <button class="card-buy rounded-pill"
+                        <button class="PlansMain__Plans--Card__Body--Button card-buy rounded-pill"
                             onclick="addToCart('Cipher Guard', 'This plan offers managed antivirus, web security, dark web scans, and minimum security support from 8am to 6pm, ideal for startups with low compliance requirements and higher risk tolerance.', 20.25, 'CipherGuard.png'); ">Buy
                             Now</button>
                     </ul>
                 </div>
             </div>
-            <div class="card" style="width: 22rem; min-height: 35rem;">
-                <img src="/assets/images/GridSentinel.png" class="card-photo" alt="Grid Sentinel Plan">
-                <div class="card-body text-start">
-                    <h5 class="card-title">Grid Sentinel</h5>
-                    <h6 class="card-title">£35.75/month</h6>
-                    <p class="subtitle card-title">For upto 20 Employees</p>
-                    <p class="card-text">Suitable for companies that have minor compliance needs and require a standard
-                    <p class="card-title">Everything in Previous Plan Plus</p>
-                    <ul class="card-text list-unstyled">
+            <div class="PlansMain__Plans--Card card" style="width: 22rem; min-height: 35rem;">
+                <img src="/assets/images/GridSentinel.png" class="PlansMain__Plans--Photo card-photo" alt="Grid Sentinel Plan">
+                <div class="PlansMain__Plans--Card__Body card-body text-start">
+                    <h5 class="PlansMain__Plans--Card__Body--Title card-title">Grid Sentinel</h5>
+                    <h6 class="PlansMain__Plans--Card__Body--Title card-title">£35.75/month</h6>
+                    <p class="PlansMain__Plans--Card__Body--Subtitle card-title">For upto 20 Employees</p>
+                    <p class="PlansMain__Plans--Card__Body--Text card-text">Suitable for companies that have minor compliance needs and require a standard
+                    <p class="PlansMain__Plans--Card__Body--Title card-title">Everything in Previous Plan Plus</p>
+                    <ul class="PlansMain__Plans--Card__Body--List card-text list-unstyled">
                         <li><span class="text-dark">&#10003;</span> EDR (Endpoint Detection and Response)</li>
                         <li><span class="text-dark">&#10003;</span> Quarterly Risk Assessment</li>
                         <li><span class="text-dark">&#10003;</span> Business Security Support (8am - 6pm)</li>
-                        <button class="card-buy rounded-pill"
+                        <button class="PlansMain__Plans--Card__Body--Button card-buy rounded-pill"
                             onclick="addToCart('Grid Sentinel', 'This plan offers EDR, quarterly risk assessments, and business security support from 8am to 6pm, suitable for companies with minor compliance needs.', 35.75, 'GridSentinel.png')">Buy
                             Now</button>
                 </div>
             </div>
-            <div class="card" style="width: 22rem; min-height: 35rem;">
-                <img src="/assets/images/FortressX.png" class="card-photo" alt="FortressX Plan">
-                <div class="card-body text-start">
-                    <h5 class="card-title">Fortress X</h5>
-                    <h6 class="card-title">£45.75/month</h6>
-                    <p class="subtitle card-title">For Upto 60 Employees</p>
-                    <p class="card-text">Suitable for companies with compliance needs requiring high levels of security
+            <div class="PlansMain__Plans--Card card" style="width: 22rem; min-height: 35rem;">
+                <img src="/assets/images/FortressX.png" class="PlansMain__Plans--Photo card-photo" alt="FortressX Plan">
+                <div class="PlansMain__Plans--Card__Body card-body text-start">
+                    <h5 class="PlansMain__Plans--Card__Body--Title card-title">Fortress X</h5>
+                    <h6 class="PlansMain__Plans--Card__Body--Title card-title">£45.75/month</h6>
+                    <p class="PlansMain__Plans--Card__Body--Subtitle card-title">For Upto 60 Employees</p>
+                    <p class="PlansMain__Plans--Card__Body--Text card-text">Suitable for companies with compliance needs requiring high levels of security
                         with low risk tolerances.</p>
-                    <p class="card-title">Everything in Previous Plan Plus</p>
-                    <ul class="card-text list-unstyled">
+                    <p class="PlansMain__Plans--Card__Body--Title card-title">Everything in Previous Plan Plus</p>
+                    <ul class="PlansMain__Plans--Card__Body--List card-text list-unstyled">
                         <li><span class="text-dark">&#10003;</span> Email Security</li>
                         <li><span class="text-dark">&#10003;</span> MDR (Managed Detection and Response)</li>
                         <li><span class="text-dark">&#10003;</span> 24/7 SOC Backed Response</li>
                         <li><span class="text-dark">&#10003;</span> Professional Security Support (24/7)</li>
-                        <button class="card-buy rounded-pill"
+                        <button class="PlansMain__Plans--Card__Body--Button card-buy rounded-pill"
                             onclick="addToCart('Fortress X', 'This plan offers email security, MDR, 24/7 SOC backed response, and professional security support, suitable for companies with high compliance needs and low risk tolerance.', 45.75, 'FortressX.png')">Buy
                             Now</button>
                 </div>
             </div>
-            <div class="card" style="width: 22rem; min-height: 35rem;">
-                <img src="/assets/images/HypershieldX.png" class="card-photo" alt="HyperShield 360 Plan">
-                <div class="card-body text-start">
-                    <h5 class="card-title">HyperShield 360</h5>
-                    <h6 class="card-title">£155.75/month</h6>
-                    <p class="subtitle card-title">Enterprise Security Level</p>
-                    <p class="card-text">Suitable for larger organisations with need of enterprise levels of layered
+            <div class="PlansMain__Plans--Card card" style="width: 22rem; min-height: 35rem;">
+                <img src="/assets/images/HypershieldX.png" class="PlansMain__Plans--Photo card-photo" alt="HyperShield 360 Plan">
+                <div class="PlansMain__Plans--Card__Body card-body text-start">
+                    <h5 class="PlansMain__Plans--Card__Body--Title card-title">HyperShield 360</h5>
+                    <h6 class="PlansMain__Plans--Card__Body--Title card-title">£155.75/month</h6>
+                    <p class="PlansMain__Plans--Card__Body--Subtitle card-title">Enterprise Security Level</p>
+                    <p class="PlansMain__Plans--Card__Body--Text card-text">Suitable for larger organisations with need of enterprise levels of layered
                         security allowing for stringent levels of compliance to meet the most exacting guidelines.</p>
-                    <p class="card-title">Everything in Previous Plan Plus</p>
-                    <ul class="card-text list-unstyled">
+                    <p class="PlansMain__Plans--Card__Body--Title card-title">Everything in Previous Plan Plus</p>
+                    <ul class="PlansMain__Plans--Card__Body--List card-text list-unstyled">
                         <li><span class="text-dark">&#10003;</span> Managed SaaS</li>
                         <li><span class="text-dark">&#10003;</span> Co-Managed SIEM</li>
                         <li><span class="text-dark">&#10003;</span> Immediate Response Team (24/7)</li>
-                        <button class="card-buy rounded-pill"
+                        <button class="PlansMain__Plans--Card__Body--Button card-buy rounded-pill"
                             onclick="addToCart('HyperShield 360', 'This plan offers managed SaaS, co-managed SIEM, and an immediate response team available 24/7, suitable for larger organizations needing enterprise-level security.', 155.75, 'HypershieldX.png')">Buy
                             Now</button>
                 </div>
             </div>
-            <div class="card" style="width: 22rem; min-height: 35rem;">
-                <img src="/assets/images/OmegaDefender.png" class="card-photo" alt="Omega Defender Plan">
-                <div class="card-body text-start">
-                    <h5 class="card-title">Omega Defender</h5>
-                    <h6 class="card-title">£25.75/month</h6>
-                    <p class="subtitle card-title">For MS Business Premium users</p>
-                    <p class="card-text">For those clients that gain access to advanced EDR tools via Business Premium.
+            <div class="PlansMain__Plans--Card card" style="width: 22rem; min-height: 35rem;">
+                <img src="/assets/images/OmegaDefender.png" class="PlansMain__Plans--Photo card-photo" alt="Omega Defender Plan">
+                <div class="PlansMain__Plans--Card__Body card-body text-start">
+                    <h5 class="PlansMain__Plans--Card__Body--Title card-title">Omega Defender</h5>
+                    <h6 class="PlansMain__Plans--Card__Body--Title card-title">£25.75/month</h6>
+                    <p class="PlansMain__Plans--Card__Body--Subtitle card-title">For MS Business Premium users</p>
+                    <p class="PlansMain__Plans--Card__Body--Text card-text">For those clients that gain access to advanced EDR tools via Business Premium.
                     </p>
-                    <ul class="card-text list-unstyled">
+                    <ul class="PlansMain__Plans--Card__Body--List card-text list-unstyled">
                         <li><span class="text-dark">&#10003;</span> Managed AntiVirus</li>
                         <li><span class="text-dark">&#10003;</span> Defender EDR</li>
                         <li><span class="text-dark">&#10003;</span> Managed Web Security</li>
@@ -173,26 +172,26 @@
                         <li><span class="text-dark">&#10003;</span> Dark Web Scans</li>
                         <li><span class="text-dark">&#10003;</span> Quarterly Risk Assessment</li>
                         <li><span class="text-dark">&#10003;</span> Business Security Support (8am - 6pm)</li>
-                        <button class="card-buy rounded-pill"
+                        <button class="PlansMain__Plans--Card__Body--Button card-buy rounded-pill"
                             onclick="addToCart('Omega Defender', 'This plan offers managed antivirus, Defender EDR, web security, updates and patch management, 2FA, dark web scans, quarterly risk assessments, and business security support from 8am to 6pm, suitable for MS Business Premium users.', 25.75, 'OmegaDefender.png')">Buy
                             Now</button>
                 </div>
             </div>
-            <div class="card" style="width: 22rem; min-height: 35rem;">
-                <img src="/assets/images/Titan Defense.png" class="card-photo" alt="Titan Defense Plan">
-                <div class="card-body text-start">
-                    <h5 class="card-title">Titan Defense</h5>
-                    <h6 class="card-title">£45.75/month</h6>
-                    <p class="subtitle card-title">For MS Business Premium users</p>
-                    <p class="card-text">For clients using Microsoft Business Premium and requiring 24/7 SOC backed
+            <div class="PlansMain__Plans--Card card" style="width: 22rem; min-height: 35rem;">
+                <img src="/assets/images/Titan Defense.png" class="PlansMain__Plans--Photo card-photo" alt="Titan Defense Plan">
+                <div class="PlansMain__Plans--Card__Body card-body text-start">
+                    <h5 class="PlansMain__Plans--Card__Body--Title card-title">Titan Defense</h5>
+                    <h6 class="PlansMain__Plans--Card__Body--Title card-title">£45.75/month</h6>
+                    <p class="PlansMain__Plans--Card__Body--Subtitle card-title">For MS Business Premium users</p>
+                    <p class="PlansMain__Plans--Card__Body--Text card-text">For clients using Microsoft Business Premium and requiring 24/7 SOC backed
                         support.</p>
-                    <p class="card-title">Everything in Omega Defender Plus</p>
-                    <ul class="card-text list-unstyled">
+                    <p class="PlansMain__Plans--Card__Body--Title card-title">Everything in Omega Defender Plus</p>
+                    <ul class="PlansMain__Plans--Card__Body--List card-text list-unstyled">
                         <li><span class="text-dark">&#10003;</span> Email Security</li>
                         <li><span class="text-dark">&#10003;</span> MDR (Managed Detection and Response)</li>
                         <li><span class="text-dark">&#10003;</span> 24/7 SOC Backed Response</li>
                         <li><span class="text-dark">&#10003;</span> Professional Security Support (24/7)</li>
-                        <button class="card-buy rounded-pill"
+                        <button class="PlansMain__Plans--Card__Body--Button card-buy rounded-pill"
                             onclick="addToCart('Titan Defense', 'This plan offers email security, MDR, 24/7 SOC backed response, and professional security support, suitable for MS Business Premium users requiring 24/7 support.', 45.75, 'Titan Defense.png')">Buy
                             Now</button>
                 </div>
