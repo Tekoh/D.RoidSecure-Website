@@ -27,7 +27,7 @@ body.dark-mode {
         align-items: center;
         justify-content: center;
         text-align: center;
-        color: #F8FAFC;
+        color: var(--primary);
         margin-bottom: 50px;
         background-attachment: fixed;
 

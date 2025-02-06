@@ -49,16 +49,18 @@ document.getElementById("checkout-form").addEventListener("submit", function (ev
     let phone = document.getElementById("phone-input").value;
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
     if (cart.length === 0) {
-        document.getElementById('error-field').innerHTML = 'You have no items in your cart';
+        document.getElementById('Universal-Overlay__ErrorField').innerHTML = 'You have no items in your cart';
         showOverlay();
     } else
-        if (!isFormValid(name, email, phone)) {
-            document.getElementById('error-field').innerHTML = 'Please fill in all fields correctly';
+        if (!IsCartValid(name, email, phone)) {
+            document.getElementById('Universal-Overlay__ErrorField').innerHTML = 'Please fill in all fields correctly';
             showOverlay();
         } else {
-            document.getElementById('error-field').innerHTML = 'Order successfully placed!';
+            document.getElementById('Universal-Overlay__ErrorField').innerHTML = 'Order successfully placed!';
             showOverlay();
+            hideOverlay = function() {
+                location.reload();
+            };
             localStorage.removeItem("cart");
         }
 });
-

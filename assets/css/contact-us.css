@@ -16,3 +16,226 @@ body.dark-mode {
     --primary: #0EA5E9;
     --highlight: #0ea4e980;
 }
+
+.Contact-Main {
+    display: flex;
+    flex-direction: column;
+}
+
+.Contact-Main .Contact-Main__Wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.Contact-Main .Contact-Main__Wrapper .Contact__Wrapper--Text {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 2rem;
+    margin-top: 3rem;
+}
+
+.Contact-Main .Contact-Main__Wrapper .Contact__Wrapper--Text .Contact__Title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1.25rem;
+    color: var(--primary);
+}
+
+.Contact-Main .Contact-Main__Wrapper .Contact__Wrapper--Text .Contact__Sub-Title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1.25rem;
+    color: var(--highlight);
+    margin-top: 5rem;
+}
+
+.Contact-Main .Contact-Main__Wrapper .Contact__Wrapper--Text .Contact__Body {
+    font-size: 1.1rem;
+    margin-bottom: 1.25rem;
+    color: var(--text);
+}
+
+.Contact-Main .Contact-Main__Wrapper .Contact__Form {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    margin: 2rem;
+}
+
+.Contact-Main .Contact-Main__Wrapper .Contact__Form .Contact__Form--Wrapper {
+    display: inline-flex;
+}
+
+.Contact-Main .Contact-Main__Wrapper .Contact__Form .Contact__Form--Title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.25rem;
+    color: var(--primary);
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+}
+
+
+.Contact-Main .Contact-Main__Wrapper .Contact__Form input {
+    background-color: var(--background);
+    border: 1px solid var(--primary);
+    color: var(--text);
+    padding: 0.125rem 0.625rem;
+    margin: 1rem;
+}
+
+.Contact-Main .Contact-Main__Wrapper .Contact__Form textarea {
+    background-color: var(--background);
+    border: 1px solid var(--primary);
+    color: var(--text);
+    padding: 0.125rem 0.625rem;
+    resize: none;
+    margin: 1rem;
+    height: 10rem;
+    transition: ease-in 0.3s;
+}
+
+.Contact-Main .Contact-Main__Wrapper .Contact__Form textarea:focus,
+.Contact-Main .Contact-Main__Wrapper .Contact__Form input:focus {
+    background-color: var(--highlight);
+    border: 1px solid var(--primary);
+    color: var(--text);
+    transition: ease-in 0.3s;
+}
+
+.Contact-Main .Contact-Main__Wrapper .Contact__Form input::placeholder,
+.Contact-Main .Contact-Main__Wrapper .Contact__Form textarea::placeholder {
+    color: var(--highlight);
+}
+
+.Contact-Main .Contact-Main__Wrapper .Contact__Form input:focus::placeholder,
+.Contact-Main .Contact-Main__Wrapper .Contact__Form textarea:focus::placeholder {
+    color: var(--text);
+}
+
+.Contact-Main .Contact-Main__Wrapper .Contact__Form button {
+    background-color: var(--background);
+    border: 1px solid var(--primary);
+    color: var(--text);
+    padding: 0.125rem 0.625rem;
+    margin: 1rem;
+    width: 40%;
+    align-self: end;
+    transition: ease-in 0.3s;
+}
+
+.Contact-Main .Contact-Main__Wrapper .Contact__Form button:hover {
+    background-color: var(--primary);
+    border: 1px solid var(--background);
+    color: var(--background);
+    transition: ease-in 0.3s;
+}
+
+.Contact-Main .Contact__Tagline {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin: 2rem;
+    margin-bottom: 5rem;
+    color: var(--highlight);
+    align-self: center;
+}
+
+
+.Contact-Main .Contact-Main__Wrapper .Contact__Form .Contact__Form--errors {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 1rem;
+    color: red;
+    align-self: center;
+    padding: 0.125rem 0.625rem;
+}
+
+.Universal-Overlay {
+    display: none;
+}
+
+.Universal-Overlay.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(14, 164, 233, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    font-size: 30px;
+    font-weight: 600;
+
+}
+
+.Universal-Overlay .Universal-Overlay__HideButton {
+    background-color: var(--background);
+    border: 1px solid var(--primary);
+    color: var(--text);
+    padding: 2px 10px;
+    transition: ease-in 0.3s;
+    font-size: 20px;
+    width: 100px;
+    position: fixed;
+    bottom: 40%;
+    left: 50%;
+
+}
+
+.Universal-Overlay .Universal-Overlay__HideButton:hover {
+    background-color: var(--primary);
+    border: 1px solid var(--background);
+    color: var(--background);
+    padding: 2px 10px;
+    transition: ease-in 0.3s;
+}
+
+.Universal-Overlay .Universal-Overlay__HomeButton {
+    background-color: var(--background);
+    border: 1px solid var(--primary);
+    color: var(--text);
+    padding: 2px 10px;
+    transition: ease-in 0.3s;
+    font-size: 20px;
+    width: 100px;
+    position: fixed;
+    bottom: 30%;
+    left: 50%;
+
+}
+.Universal-Overlay .Universal-Overlay__HomeButton:hover {
+    background-color: var(--primary);
+    border: 1px solid var(--background);
+    color: var(--background);
+    padding: 2px 10px;
+    transition: ease-in 0.3s;
+}
+
+@media screen and (max-width: 1000px) {
+    .Contact-Main .Contact-Main__Wrapper {
+        flex-direction: column;
+    }
+
+    .Contact-Main .Contact-Main__Wrapper .Contact__Wrapper--Text {
+        width: 85%;
+        text-align: center;
+    }
+
+    .Contact-Main .Contact-Main__Wrapper .Contact__Form .Contact__Form--Wrapper {
+        flex-direction: column;
+    }
+
+    .Contact-Main .Contact-Main__Wrapper .Contact__Form {
+        width: 85%;
+    }
+
+    .Universal-Overlay .Universal-Overlay__HideButton {
+        bottom: 30%;
+        left: 10%;
+    }
+
+}

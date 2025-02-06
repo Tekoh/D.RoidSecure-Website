@@ -18,6 +18,64 @@ document.addEventListener("DOMContentLoaded", function () {
     checkVisibility();
 
     window.addEventListener('scroll', checkVisibility);
+
+    function isContactValid() {
+        let email = document.getElementById("email-input").value;
+        let name = document.getElementById("name-input").value;
+        let subject = document.getElementById("subject-input").value;
+        let message = document.getElementById("text-input").value;
+
+        let emailError = document.getElementById("email-error");
+        let nameError = document.getElementById("name-error");
+        let subjectError = document.getElementById("subject-error");
+        let messageError = document.getElementById("message-error");
+
+        let isValid = true;
+
+        // Reset error messages
+        emailError.textContent = '';
+        nameError.textContent = '';
+        subjectError.textContent = '';
+        messageError.textContent = '';
+
+        // Email validation
+        if (!email.includes("@") || !email.includes(".")) {
+            emailError.textContent = 'Please enter a valid email address.';
+            isValid = false;
+        }
+
+        // Name validation 
+        if (name.trim().split(" ").length < 2) {
+            nameError.textContent = 'Please enter your full name (First and Last).';
+            isValid = false;
+        }
+
+        if (subject.trim().split(" ").length < 2 || subject.trim().split(" ").length > 50) {
+            subjectError.textContent = 'Subject must be between 2 and 50 words long.';
+            isValid = false;
+        }
+
+        // Message validation 
+        if (message.length < 20) {
+            messageError.textContent = 'Message must be at least 20 characters long.';
+            isValid = false;
+        }
+        
+        return isValid;
+    }
+
+    const form = document.getElementById("MyContact__Form");
+    form.addEventListener("submit", function (event) {
+        if (!isContactValid()) {
+            event.preventDefault();
+            document.getElementById('Universal-Overlay__ErrorField').innerHTML = 'Please fill in all fields correctly';
+            showOverlay();
+        } else {
+            document.getElementById('Universal-Overlay__ErrorField').innerHTML = 'Thanks for the message! We will be right back!';
+            showOverlay();
+            form.reset();
+        }
+    });
 });
 
 
@@ -69,44 +127,8 @@ if (prefersDarkScheme.matches) {
 
 //Form Validation Checks
 
-// Email Validation Check
-document.getElementById("email-input").addEventListener("input", function () {
-    let email = this.value;
-    let error = document.getElementById("email-error");
-
-    if (!email.includes("@") || !email.includes(".")) {
-        error.textContent = "Invalid email format!";
-    } else {
-        error.textContent = "";
-    }
-});
-
-// Phone Number Validation Check
-document.getElementById("phone-input").addEventListener("input", function () {
-    let phone = this.value;
-    let error = document.getElementById("phone-error");
-
-    if (!/^\d{11}$/.test(phone)) {
-        error.textContent = "Invalid phone number format! Must be 11 digits.";
-    } else {
-        error.textContent = "";
-    }
-});
-
-// Full Name Validation Check
-document.getElementById("name-input").addEventListener("input", function () {
-    let name = this.value;
-    let error = document.getElementById("name-error");
-
-    if (name.trim().split(" ").length < 2) {
-        error.textContent = "Full name must include at least first and last name.";
-    } else {
-        error.textContent = "";
-    }
-});
-
 // Submit Form Validation Check
-function isFormValid() {
+function IsCartValid() {
     let email = document.getElementById("email-input").value;
     let phone = document.getElementById("phone-input").value;
     let name = document.getElementById("name-input").value;
@@ -121,14 +143,76 @@ function isFormValid() {
     return true;
 }
 
+
+
+
+
+// Full Name Validation Check
+document.getElementById("name-input").addEventListener("input", function () {
+    let name = this.value;
+    let error = document.getElementById("name-error");
+    if (!/^[a-zA-Z\s]{2,}$/.test(name) || name.trim().split(" ").length < 2) {
+        error.textContent = "* Full name must include at least first and last name and contain only alphabets.";
+    } else {
+        error.textContent = "";
+    }
+});
+
+// Email Validation Check
+document.getElementById("email-input").addEventListener("input", function () {
+    let email = this.value;
+    let error = document.getElementById("email-error");
+
+    if (!email.includes("@") || !email.includes(".")) {
+        error.textContent = "* Invalid Email format!";
+    } else {
+        error.textContent = "";
+    }
+});
+
+// Subject Validation Check
+document.getElementById("subject-input").addEventListener("input", function () {
+    let subject = this.value;
+    let error = document.getElementById("subject-error");
+    if (!/^[a-zA-Z\s]{3,}$/.test(subject) || subject.trim().split(" ").length < 3) {
+        error.textContent = "* Invalid Subject format!";
+    } else {
+        error.textContent = "";
+    }
+});
+
+// Message Validation Check
+document.getElementById("text-input").addEventListener("input", function () {
+    let message = this.value;
+    let error = document.getElementById("message-error");
+    if (message.trim().split(" ").length < 5) {
+        error.textContent = "* Message must be at least 5 words long.";
+    } else {
+        error.textContent = "";
+    }
+});
+
+// Phone Number Validation Check
+document.getElementById("phone-input").addEventListener("input", function () {
+    let phone = this.value;
+    let error = document.getElementById("phone-error");
+
+    if (!/^\d{11}$/.test(phone)) {
+        error.textContent = "* Invalid phone number format! Must be 11 digits.";
+    } else {
+        error.textContent = "";
+    }
+});
+
+
 // Form Submission Overlay
 
 function showOverlay() {
-    document.querySelector(".submission").classList.add("active");
+    document.querySelector(".Universal-Overlay").classList.add("active");
 }
 
 function hideOverlay() {
-    document.querySelector(".submission").classList.remove("active");
+    document.querySelector(".Universal-Overlay").classList.remove("active");
 }
 
 // Redirect to Home Page Function

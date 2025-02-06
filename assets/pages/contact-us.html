@@ -9,9 +9,11 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="/assets/css/main.css">
     <link rel="stylesheet" href="/assets/css/contact-us.css">
+
 </head>
 
 <body>
+
 
     <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container-fluid">
@@ -49,6 +51,49 @@
             </div>
         </div>
     </nav>
+    <section class="Contact-Main container-lg">
+        <div class="Universal-Overlay">
+            <p id="Universal-Overlay__ErrorField"></p>
+            <button class="Universal-Overlay__HideButton rounded-pill" onclick="hideOverlay ()">Close</button>
+            <button class="Universal-Overlay__HomeButton rounded-pill" onclick="goHome()">Home</button>
+        </div>
+        <div class="Contact-Main__Wrapper">
+            <div class="Contact__Wrapper--Text">
+                <div class="Contact__Title">Contact Us!</div>
+                <div class="Contact__Sub-Title">Your Security Starts with a Conversation – Reach Out to Droid Secure
+                    Today!
+                </div>
+                <div class="Contact__Body">Got a question, need expert advice, or looking for top-tier cybersecurity
+                    solutions?
+                    We’re
+                    here to help! At Droid Secure, we believe that strong security starts with open communication.
+                    Whether
+                    you’re facing a cybersecurity challenge, need a consultation, or want to explore our services, our
+                    team
+                    is
+                    ready to assist you.</div>
+            </div>
+            <form class="Contact__Form" id="MyContact__Form" onsubmit="return false;">
+                <div class="Contact__Form--Title">
+                    <p>Send us a message!</p>
+                </div>
+                <input type="text" id="name-input" placeholder="Name" required>
+                <div class="Contact__Form--Wrapper">
+                    <input type="email" id="email-input" placeholder="Email" required>
+                    <input type="text" id="subject-input" placeholder="Subject" required>
+                </div>
+                <textarea name="Text" id="text-input" placeholder="Message" required></textarea>
+                <button type="submit">Send</button>
+                <div class="Contact__Form--errors">
+                    <p id="name-error"></p>
+                    <p id="email-error"></p>
+                    <p id="subject-error"></p>
+                    <p id="message-error"></p>
+                </div>
+            </form>
+        </div>
+        <p class="Contact__Tagline">Stay Secure, Stay Ahead – Contact Droid Secure for Cyber Confidence!</p>
+    </section>
 
 
     <footer class="footer mt-auto">
@@ -66,10 +111,14 @@
     </footer>
 
 </body>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+crossorigin="anonymous"></script>
 <script src="/assets/js/main.js"></script>
 <script src="/assets/js/utils.js"></script>
+
+
+
 
 </html>
