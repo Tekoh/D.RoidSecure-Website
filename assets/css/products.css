@@ -23,93 +23,91 @@ body.dark-mode {
     background-attachment: fixed;
 }
 
-.Main {
+.ProductsMain div {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
 
-    div {
-        opacity: 0;
-        transform: translateY(30px);
-        transition: opacity 1s ease-out, transform 1s ease-out;
-    }
-    
-    div.visible {
-        opacity: 1;
-        transform: translateY(0);
-    }
-    
-    .Products {
-        padding: 50px;
-        &:not(:last-child) {
-            border-bottom: 2px solid var(--highlight);
-        }
-        .Title {
-            .maintitle {
-                font-size: 50px;
-                font-weight: bold;
-                margin-bottom: 20px;
-                color: var(--primary);
-            }
-            .subtitle {
-                font-size: 20px;
-                font-weight: bolder;
-                text-align: start;
-                color: var(--text);
-                padding: 10px;
-            }
-        }
+.ProductsMain div.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
 
-        .card {
-            background-color: var(--text);
-            color: var(--background);
-            border-radius: 10px;
-            border: 2px solid var(--primary);
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+.ProductsMain .ProductsMain__Products {
+    padding: 50px;
+}
 
-            .card-body {
-                padding: 40px;
-            }
+.ProductsMain .ProductsMain__Products:not(:last-child) {
+    border-bottom: 2px solid var(--highlight);
+}
 
-            .card-title {
-                color: var(--primary);
-            }
+.ProductsMain .ProductsMain__Products .ProductsMain__Products--Header .ProductsMain__Products--Header__Title {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: var(--primary);
+}
 
-            .subtitle {
-                color: var(--highlight);
-            }
+.ProductsMain .ProductsMain__Products .ProductsMain__Products--Header .ProductsMain__Products--Header__SubTitle {
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: start;
+    color: var(--text);
+    padding: 10px;
+}
 
-            .card-buy {
-                background-color: var(--primary);
-                border: 1px solid var(--background);
-                color: var(--text);
-                padding: 2px 10px;
-                position: absolute;
-                bottom: 10px;
-                right: 10px;
-            }
+.ProductsMain .ProductsMain__Products .ProductsMain__Products--Card {
+    background-color: var(--text);
+    color: var(--background);
+    border-radius: 10px;
+    border: 2px solid var(--primary);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
-            .card-buy:hover {
-                background-color: var(--text);
-                color: var(--primary);
-                border: 1px solid var(--primary);
-            }
+.ProductsMain .ProductsMain__Products .ProductsMain__Products--Card .ProductsMain__Products--CardBody-body {
+    padding: 40px;
+}
 
-            .card-photo {
-                width: 100%;
-                height: 200px;
-                object-fit: cover;
-                border-top-left-radius: 8px;
-                border-top-right-radius: 8px;
-            }
+.ProductsMain .ProductsMain__Products .ProductsMain__Products--Card .ProductsMain__Products--CardTitle {
+    color: var(--primary);
+}
 
-            &:hover {
-                transform: scale(1.025);
-                transition: transform 0.35s;
-                box-shadow: 10px 10px 10px rgba(51, 51, 51, 0.255);
-            }
-        }
-    }
+.ProductsMain .ProductsMain__Products .ProductsMain__Products--Card .ProductsMain__Products--CardSubTitle {
+    color: var(--highlight);
+}
+
+.ProductsMain .ProductsMain__Products .ProductsMain__Products--Card .ProductsMain__Products--CardBuy {
+    background-color: var(--primary);
+    border: 1px solid var(--background);
+    color: var(--text);
+    padding: 2px 10px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.ProductsMain .ProductsMain__Products .ProductsMain__Products--Card .ProductsMain__Products--CardBuy:hover {
+    background-color: var(--text);
+    color: var(--primary);
+    border: 1px solid var(--primary);
+}
+
+.ProductsMain .ProductsMain__Products .ProductsMain__Products--Card .ProductsMain__Products--CardPhoto {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.ProductsMain .ProductsMain__Products .ProductsMain__Products--Card:hover {
+    transform: scale(1.025);
+    transition: transform 0.35s;
+    box-shadow: 10px 10px 10px rgba(51, 51, 51, 0.255);
 }
