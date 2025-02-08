@@ -17,18 +17,18 @@ body.dark-mode {
     --highlight: #0ea4e980;
 }
 
-.Contact-Main {
+.ContactMain {
     display: flex;
     flex-direction: column;
 }
 
-.Contact-Main .Contact-Main__Wrapper {
+.ContactMain .ContactMain__Wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
 
-.Contact-Main .Contact-Main__Wrapper .Contact__Wrapper--Text {
+.ContactMain .ContactMain__Wrapper .Contact__Wrapper--Text {
     display: flex;
     flex-direction: column;
     width: 50%;
@@ -36,14 +36,14 @@ body.dark-mode {
     margin-top: 3rem;
 }
 
-.Contact-Main .Contact-Main__Wrapper .Contact__Wrapper--Text .Contact__Title {
+.ContactMain .ContactMain__Wrapper .Contact__Wrapper--Text .Contact__Title {
     font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 1.25rem;
     color: var(--primary);
 }
 
-.Contact-Main .Contact-Main__Wrapper .Contact__Wrapper--Text .Contact__Sub-Title {
+.ContactMain .ContactMain__Wrapper .Contact__Wrapper--Text .Contact__Sub-Title {
     font-size: 1.25rem;
     font-weight: bold;
     margin-bottom: 1.25rem;
@@ -51,24 +51,24 @@ body.dark-mode {
     margin-top: 5rem;
 }
 
-.Contact-Main .Contact-Main__Wrapper .Contact__Wrapper--Text .Contact__Body {
+.ContactMain .ContactMain__Wrapper .Contact__Wrapper--Text .Contact__Body {
     font-size: 1.1rem;
     margin-bottom: 1.25rem;
     color: var(--text);
 }
 
-.Contact-Main .Contact-Main__Wrapper .Contact__Form {
+.ContactMain .ContactMain__Wrapper .Contact__Form {
     display: flex;
     flex-direction: column;
     width: 45%;
     margin: 2rem;
 }
 
-.Contact-Main .Contact-Main__Wrapper .Contact__Form .Contact__Form--Wrapper {
+.ContactMain .ContactMain__Wrapper .Contact__Form .Contact__Form--Wrapper {
     display: inline-flex;
 }
 
-.Contact-Main .Contact-Main__Wrapper .Contact__Form .Contact__Form--Title {
+.ContactMain .ContactMain__Wrapper .Contact__Form .Contact__Form--Title {
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 1.25rem;
@@ -78,7 +78,7 @@ body.dark-mode {
 }
 
 
-.Contact-Main .Contact-Main__Wrapper .Contact__Form input {
+.ContactMain .ContactMain__Wrapper .Contact__Form input {
     background-color: var(--background);
     border: 1px solid var(--primary);
     color: var(--text);
@@ -86,7 +86,7 @@ body.dark-mode {
     margin: 1rem;
 }
 
-.Contact-Main .Contact-Main__Wrapper .Contact__Form textarea {
+.ContactMain .ContactMain__Wrapper .Contact__Form textarea {
     background-color: var(--background);
     border: 1px solid var(--primary);
     color: var(--text);
@@ -97,25 +97,25 @@ body.dark-mode {
     transition: ease-in 0.3s;
 }
 
-.Contact-Main .Contact-Main__Wrapper .Contact__Form textarea:focus,
-.Contact-Main .Contact-Main__Wrapper .Contact__Form input:focus {
+.ContactMain .ContactMain__Wrapper .Contact__Form textarea:focus,
+.ContactMain .ContactMain__Wrapper .Contact__Form input:focus {
     background-color: var(--highlight);
     border: 1px solid var(--primary);
     color: var(--text);
     transition: ease-in 0.3s;
 }
 
-.Contact-Main .Contact-Main__Wrapper .Contact__Form input::placeholder,
-.Contact-Main .Contact-Main__Wrapper .Contact__Form textarea::placeholder {
+.ContactMain .ContactMain__Wrapper .Contact__Form input::placeholder,
+.ContactMain .ContactMain__Wrapper .Contact__Form textarea::placeholder {
     color: var(--highlight);
 }
 
-.Contact-Main .Contact-Main__Wrapper .Contact__Form input:focus::placeholder,
-.Contact-Main .Contact-Main__Wrapper .Contact__Form textarea:focus::placeholder {
+.ContactMain .ContactMain__Wrapper .Contact__Form input:focus::placeholder,
+.ContactMain .ContactMain__Wrapper .Contact__Form textarea:focus::placeholder {
     color: var(--text);
 }
 
-.Contact-Main .Contact-Main__Wrapper .Contact__Form button {
+.ContactMain .ContactMain__Wrapper .Contact__Form button {
     background-color: var(--background);
     border: 1px solid var(--primary);
     color: var(--text);
@@ -126,14 +126,14 @@ body.dark-mode {
     transition: ease-in 0.3s;
 }
 
-.Contact-Main .Contact-Main__Wrapper .Contact__Form button:hover {
+.ContactMain .ContactMain__Wrapper .Contact__Form button:hover {
     background-color: var(--primary);
     border: 1px solid var(--background);
     color: var(--background);
     transition: ease-in 0.3s;
 }
 
-.Contact-Main .Contact__Tagline {
+.ContactMain .Contact__Tagline {
     font-size: 1.25rem;
     font-weight: bold;
     margin: 2rem;
@@ -143,7 +143,7 @@ body.dark-mode {
 }
 
 
-.Contact-Main .Contact-Main__Wrapper .Contact__Form .Contact__Form--errors {
+.ContactMain .ContactMain__Wrapper .Contact__Form .Contact__Form--errors {
     font-size: 1rem;
     font-weight: bold;
     margin: 1rem;
@@ -216,20 +216,20 @@ body.dark-mode {
 }
 
 @media screen and (max-width: 1000px) {
-    .Contact-Main .Contact-Main__Wrapper {
+    .ContactMain .ContactMain__Wrapper {
         flex-direction: column;
     }
 
-    .Contact-Main .Contact-Main__Wrapper .Contact__Wrapper--Text {
+    .ContactMain .ContactMain__Wrapper .Contact__Wrapper--Text {
         width: 85%;
         text-align: center;
     }
 
-    .Contact-Main .Contact-Main__Wrapper .Contact__Form .Contact__Form--Wrapper {
+    .ContactMain .ContactMain__Wrapper .Contact__Form .Contact__Form--Wrapper {
         flex-direction: column;
     }
 
-    .Contact-Main .Contact-Main__Wrapper .Contact__Form {
+    .ContactMain .ContactMain__Wrapper .Contact__Form {
         width: 85%;
     }
 

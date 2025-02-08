@@ -54,16 +54,16 @@
             </div>
         </div>
     </nav>
-    <section class="Main container-lg d-flex flex-column">
+    <section class="CartMain container-lg d-flex flex-column">
         <div class="Universal-Overlay">
             <p id="Universal-Overlay__ErrorField"></p>
             <button class="Universal-Overlay__HideButton rounded-pill" onclick="hideOverlay ()">Close</button>
             <button class="Universal-Overlay__HomeButton rounded-pill" onclick="goHome()">Home</button>
         </div>
-        <p class="title">Droid Secure Checkout</p>
+        <p class="CartMain__Title">Droid Secure Checkout</p>
 
-        <div class="cart-container d-flex flex-column">
-            <div class="itemdesc d-flex flex-column">
+        <div class="CartMain__CartContainer d-flex flex-column">
+            <div class="CartMain__ItemDescription d-flex flex-column">
                 <table>
                     <thead>
                         <tr>
@@ -76,22 +76,22 @@
                     <tbody id="cart-items"></tbody>
                 </table>
             </div>
-            <div class="cartform d-flex flex-column">
-                <p class="title">Enter Your Details</p>
+            <div class="CartMain__CartFrorm d-flex flex-column">
+                <p class="CartMain__CartFrom--Title">Enter Your Details</p>
                 <form id="checkout-form">
-                    <div class="textwrapper">
+                    <div class="CartMain__CartFrom--TextWrapper">
                         <input type="text" id="name-input" placeholder="Full Name"><br>
                         <p id="name-error"></p>
                     </div>
-                    <div class="textwrapper">
+                    <div class="CartMain__CartFrom--TextWrapper">
                         <input type="email" id="email-input" placeholder="Email"><br>
                         <p id="email-error"></p>
                     </div>
-                    <div class="textwrapper">
+                    <div class="CartMain__CartFrom--TextWrapper">
                         <input type="tel" id="phone-input" placeholder="Phone Number"><br>
                         <p id="phone-error"></p>
                     </div>
-                    <button class="button" type="submit">Submit Order</button>
+                    <button class="CartMain__CartFrom--Button" type="submit">Submit Order</button>
                     <p class="title fs-5">We will be in touch with you shortly.</p>
                 </form>
             </div>

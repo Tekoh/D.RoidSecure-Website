@@ -17,38 +17,42 @@ body.dark-mode {
     --highlight: #0ea4e980;
 }
 
-.Main {
+.EmergencyMain {
     color: #ff0000;
     margin-top: 50px;
     margin-bottom: 150px;
-    @media screen and (max-width: 100px) {
+}
+
+
+.EmergencyMain .Emergency__Title {
+    font-size: 80px;
+    font-weight: 600;
+    border-bottom: 3px solid #ff0000;
+    margin-top: 80px;
+}
+
+.EmergencyMain .Emergency__SubTitle {
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 40px;
+}
+
+.EmergencyMain .Emergency__Text {
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.EmergencyMain .Emergency__SubText {
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 16px;
+    color: var(--text);
+}
+
+@media screen and (max-width: 100px) {
+    .EmergencyMain {
         margin-top: 20px;
         margin-bottom: 50px;
-    }
-
-    .title {
-        font-size: 80px;
-        font-weight: 600;
-        border-bottom: 3px solid #ff0000;
-        margin-top: 80px;
-    }
-
-    .subtitle {
-        font-size: 40px;
-        font-weight: 600;
-        margin-top: 40px;
-    }
-
-    .text {
-        font-size: 20px;
-        font-weight: 400;
-        margin-top: 20px;
-    }
-
-    .subtext {
-        font-size: 14px;
-        font-weight: 400;
-        margin-top: 16px;
-        color: var(--text);
     }
 }
