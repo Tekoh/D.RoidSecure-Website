@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (navItems[currentPath]) {
         const navElement = document.getElementById(navItems[currentPath]);
         if (navElement) {
-            navElement.classList.add('active');
+            navElement.classList.add('selected');
         }
     }
 });

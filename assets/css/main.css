@@ -124,7 +124,7 @@ body.dark-mode .Universal-Footer .Universal-Footer__Title::before {
     color: var(--primary);
 }
 
-.Universal-Navbar__Link.active {
+.Universal-Navbar__Link.selected {
     color: var(--primary);
 }
 
