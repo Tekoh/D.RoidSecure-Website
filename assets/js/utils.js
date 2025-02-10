@@ -231,3 +231,7 @@ function showToast(name) {
     document.getElementById('itemname').innerHTML = name;
     toast.show();
 }
+
+function ScrollTop() {
+    window.scrollTo(0, 0);
+}

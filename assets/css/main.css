@@ -182,6 +182,36 @@ body.dark-mode .Universal-Footer .Universal-Footer__Title::before {
     position: relative;
 }
 
+.Universal-Footer .Universal-Footer__ScrollTop{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    content: "";
+    width: 30px;
+    height: 30px;
+    background: url(/assets/icons/scroll.png) no-repeat center;
+    background-size: contain;
+    cursor: pointer;
+    transition: ease 0.5s;
+}
+
+.Universal-Footer .Universal-Footer__Wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 20px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.Universal-Footer .Universal-Footer__Wrapper .Universal-Footer__Seperator{
+    width: 90%;
+    border-top: 1px solid var(--highlight);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 .Universal-Footer .Universal-Footer__Copyright {
     color: var(--text);
     font-size: 10px;
@@ -215,27 +245,22 @@ body.dark-mode .Universal-Footer .Universal-Footer__Title::before {
     transition: ease 0.5s;
 }
 
-.Universal-Footer .Universal-Footer__SearchBar {
-    background-color: var(--background);
-    border: 1px solid var(--primary);
-    color: var(--text);
-    padding: 3px;
-    font-size: 14px;
+.Universal-Footer .Universal-Footer__Wrapper .Universal-Footer__Links {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 50%;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
 
-.Universal-Footer .Universal-Footer__SearchButton {
-    background-color: var(--background);
-    border: 1px solid var(--primary);
-    color: var(--text);
-    margin-left: 10px;
+.Universal-Footer .Universal-Footer__Wrapper .Universal-Footer__Links a:hover{
+    color: var(--primary);
+    text-decoration: none;
+    cursor: pointer;
+    transition: ease 0.5s;
 }
-
-.Universal-Footer .Universal-Footer__SearchButton:hover {
-    background-color: var(--primary);
-    border: 1px solid var(--background);
-    color: var(--background);
-}
-
 
 .Index-Body .Index-Body__EmergencyBar {
     background-color: #0EA5E9;
@@ -500,6 +525,17 @@ body.dark-mode .Universal-Footer .Universal-Footer__Title::before {
     
     .Universal__Hero--SubText {
         display: none;
-    }    
+    }
+    
+    .Universal-Footer .Universal-Footer__Wrapper .Universal-Footer__Links {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 90%;
+        justify-content: space-evenly;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-size: 12px;
+    }
 
 }
