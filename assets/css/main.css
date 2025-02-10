@@ -297,7 +297,7 @@ body.dark-mode .Universal-Footer .Universal-Footer__Title::before {
 
 .Universal__Hero {
     position: relative;
-    background: url('/assets/images/Hero_Main.webp') center/cover no-repeat;
+    background: url('/assets/images/Hero_Main.png') center/cover no-repeat;
     height: 600px;
     display: flex;
     flex-direction: column;
@@ -314,7 +314,7 @@ body.dark-mode .Universal-Footer .Universal-Footer__Title::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(14, 165, 233, 0.50);
+    background: #06476580;
 }
 
 .Universal__Hero--Text {

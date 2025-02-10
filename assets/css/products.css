@@ -18,7 +18,7 @@ body.dark-mode {
 }
 
 .Universal__Hero {
-    background: url('/assets/images/Hero_Products.png') center/cover no-repeat;
+    background: url('/assets/images/Hero_Product.webp') center/cover no-repeat;
     height: 400px;
     background-attachment: fixed;
 }
