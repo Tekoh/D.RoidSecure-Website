@@ -397,7 +397,7 @@ body.dark-mode .Universal-Footer .Universal-Footer__Title::before {
 .Index-Body .Main-Body .Main-Body__InfoSection .Main-Body__InfoSection--Cards {
     display: flex;
     flex-wrap: wrap;
-    padding-left: 100px;
+    justify-content: center;
 }
 
 
@@ -467,10 +467,6 @@ body.dark-mode .Universal-Footer .Universal-Footer__Title::before {
 
     .Index-Body .Main-Body .Main-Body__InfoSection .Main-Body__InfoSection--Card {
         font-size: 13px;
-    }
-
-    .Index-Body .Main-Body .Main-Body__InfoSection .Main-Body__InfoSection--Cards {
-        padding-left: 0px;
     }
 
     .Index-Body .Main-Body .Main-Body__InfoSection .Main-Body__InfoSection--Text__Body {
