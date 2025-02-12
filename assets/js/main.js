@@ -10,7 +10,7 @@ function addToCart(name, description, price, image) {
 
 function clearCart() {
     localStorage.removeItem("cart");
-    displayCart(); // Refresh the cart display
+    displayCart();
 }
 
 function displayCart() {

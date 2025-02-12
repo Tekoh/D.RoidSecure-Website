@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
             messageError.textContent = 'Message must be at least 20 characters long.';
             isValid = false;
         }
-        
+
         return isValid;
     }
 
