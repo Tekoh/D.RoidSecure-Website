@@ -1,4 +1,4 @@
-//add to cart function
+//When triggered takes the image, name, description, and price of the item and adds it to the cart
 function addToCart(name, description, price, image) {
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
     cart.push({ name, description, price, image });
@@ -6,13 +6,13 @@ function addToCart(name, description, price, image) {
     showToast(name);
 }
 
-//show cart function
-
+// Function that on click will remove everything in the local storage of cart so when this is pressed cart will be cleared
 function clearCart() {
     localStorage.removeItem("cart");
     displayCart();
 }
 
+// Function that will take the name, image, description, and price from the addtocart function and put it in the table in html
 function displayCart() {
     const cartTable = document.getElementById("cart-items");
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
@@ -40,7 +40,7 @@ function displayCart() {
     }
 }
 
-// Cart Check Out Function
+// A function that checks the form for valid information and gives real time feedback to as well as clears the cart if order is submitted without errors.
 
 document.getElementById("checkout-form").addEventListener("submit", function (event) {
     event.preventDefault();

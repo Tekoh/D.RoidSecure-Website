@@ -1,6 +1,6 @@
 
-//Scroll Check Function
-
+// Feature that will add "Visible" class to elements as we scroll down the page
+// This will allow us to animate elements as they come into view
 document.addEventListener("DOMContentLoaded", function () {
     const sections = document.querySelectorAll('div');
 
@@ -18,6 +18,9 @@ document.addEventListener("DOMContentLoaded", function () {
     checkVisibility();
 
     window.addEventListener('scroll', checkVisibility);
+    
+    // Function that checks the Contacts form and validates is in real time giving information of what is not correct in **-error fields
+    // Function that also checks if the form is valid and if not will prevent the form from submitting and show an error messages
 
     function isContactValid() {
         let email = document.getElementById("email-input").value;
@@ -32,30 +35,32 @@ document.addEventListener("DOMContentLoaded", function () {
 
         let isValid = true;
 
-        // Reset error messages
+        // This will reset the error messages if the user corrects the input
         emailError.textContent = '';
         nameError.textContent = '';
         subjectError.textContent = '';
         messageError.textContent = '';
 
-        // Email validation
+        // this checks if the email is valid so it includes "@" and "."
         if (!email.includes("@") || !email.includes(".")) {
             emailError.textContent = 'Please enter a valid email address.';
             isValid = false;
         }
 
-        // Name validation 
+        // this checks if the name is valid so it includes at least 2 words
         if (name.trim().split(" ").length < 2) {
             nameError.textContent = 'Please enter your full name (First and Last).';
             isValid = false;
         }
+
+        // this checks if the subject is valid so it includes at least 2 words and no more than 50
 
         if (subject.trim().split(" ").length < 2 || subject.trim().split(" ").length > 50) {
             subjectError.textContent = 'Subject must be between 2 and 50 words long.';
             isValid = false;
         }
 
-        // Message validation 
+        // this checks if the message input is valid so it includes at least 20 characters
         if (message.length < 20) {
             messageError.textContent = 'Message must be at least 20 characters long.';
             isValid = false;
@@ -64,6 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
         return isValid;
     }
 
+    // this form will prevent the form from submitting if the form is not valid and will show an error message
     const form = document.getElementById("MyContact__Form");
     form.addEventListener("submit", function (event) {
         if (!isContactValid()) {
@@ -79,7 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-// Setting Active Page Local Function
+// This function adds 'selected' to the current page in the nav bar so it can be styled differently 
 
 document.addEventListener('DOMContentLoaded', function () {
     const currentPath = window.location.pathname;
@@ -99,7 +105,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
-// Dark Mode Toggle Function
+// This function is used to toggle the dark mode on and off and save the state in local storage
 
 const toggleButton = document.getElementById('theme-toggle');
 const DRoidBody = document.body;
@@ -117,7 +123,7 @@ toggleButton.addEventListener('click', () => {
     }
 });
 
-// Dark Mode System Auto Function
+// This function checks the user preference of the user's OS and sets the dark mode if it is enabled
 
 const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
 
@@ -127,7 +133,7 @@ if (prefersDarkScheme.matches) {
 
 //Form Validation Checks
 
-// Submit Form Validation Check
+// this function checks the cart form and validates the information if the information is valid it returns true other wise false
 function IsCartValid() {
     let email = document.getElementById("email-input").value;
     let phone = document.getElementById("phone-input").value;
