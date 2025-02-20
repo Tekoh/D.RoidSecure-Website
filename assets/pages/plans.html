@@ -1,7 +1,9 @@
 <!DOCTYPE html>
+<!-- Main document for the Plans page -->
 <html lang="en">
 
 <head>
+    <!-- Meta tags and stylesheet links -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Droid Secure | Plans</title>
@@ -12,6 +14,7 @@
 </head>
 
 <body>
+    <!-- Navbar -->
     <nav class="Universal-Navbar navbar navbar-expand-lg sticky-top">
         <div class="Universal-Navbar__Container container-fluid">
             <a class="Universal-Navbar__Logo navbar-logo" href="/index.html"></a>
@@ -22,6 +25,7 @@
                 <img src="/assets/icons/burger.png" alt="Icon For Mobile Devices">
             </button>
             <div class="Universal-Navbar__Collapse collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- Nav links -->
                 <ul class="Universal-Navbar__Nav navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="Universal-Navbar__Item nav-item">
                         <a class="Universal-Navbar__Link nav-link" id="Plans" href="/assets/pages/plans.html">Plans</a>
@@ -43,34 +47,46 @@
                             href="/assets/pages/contact-us.html">Contact Us</a>
                     </li>
                 </ul>
+                <!-- Search form -->
                 <form class="Universal-Navbar__Search d-flex" role="search">
                     <input class="Universal-Navbar__Search--Bar nav-searchbar rounded-pill" type="search"
                         placeholder="Search">
                     <button class="Universal-Navbar__Search--Button nav-searchbutton rounded-pill"
                         type="submit">Search</button>
                 </form>
+                <!-- Cart and theme buttons -->
                 <button class="Universal-Navbar__Cart" onclick="goCart()"></button>
                 <button class="Universal-Navbar__Theme" id="theme-toggle"></button>
             </div>
         </div>
     </nav>
+
+    <!-- Hero section -->
     <section class="Universal__Hero">
         <div class="Universal__Hero--Overlay"></div>
         <h1 class="Universal__Hero--Text">Managed Cyber Defense Plans</h1>
-        <p class="Universal__Hero--SubText">Droid Secure offers Managed Cyber Security plans to meets the needs of security conscious
+        <p class="Universal__Hero--SubText">Droid Secure offers Managed Cyber Security plans to meets the needs of
+            security conscious
             businesses.
             The below packages are designed to match your required levels of compliance and risk alignment.</p>
     </section>
+
+    <!-- Plans overview -->
     <section class="PlansMain container-lg d-flex flex-column text-center justify-content-center mx-auto">
         <section class="PlansMain__Header">
             <p class="PlansMain__Header--Title">Droid Secure Cyber Security Plans</p>
-            <p class="PlansMain__Header--SubTitle">Droid Secure collaborates with top-notch security providers to curate comprehensive
+            <p class="PlansMain__Header--SubTitle">Droid Secure collaborates with top-notch security providers to curate
+                comprehensive
                 cyber security plans that cater to the risk and compliance requirements of companies ranging from
                 start-ups to established enterprises.</p>
-            <p class="PlansMain__Header--Disclaimer">Choose your security plan now—before hackers choose you. Stay protected before an
+            <p class="PlansMain__Header--Disclaimer">Choose your security plan now—before hackers choose you. Stay
+                protected before an
                 attack strikes</p>
         </section>
+
+        <!-- Plans cards -->
         <section class="PlansMain__Plans d-flex flex-row justify-content-lg-center flex-wrap">
+            <!-- Toast container -->
             <div class="toast-container position-fixed top-0 end-0 p-3 m-5">
                 <div id="cartToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
                     <div class="toast-header">
@@ -82,13 +98,17 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Plan 1: Cipher Guard -->
             <div class="PlansMain__Plans--Card card" style="width: 22rem; min-height: 35rem;">
-                <img src="/assets/images/CipherGuard.png" class="PlansMain__Plans--Photo card-photo" alt="Cipher Guard Plan">
+                <img src="/assets/images/CipherGuard.png" class="PlansMain__Plans--Photo card-photo"
+                    alt="Cipher Guard Plan">
                 <div class="PlansMain__Plans--Card__Body card-body text-start">
                     <h5 class="PlansMain__Plans--Card__Body--Title card-title">Cipher Guard</h5>
                     <h6 class="PlansMain__Plans--Card__Body--Title card-title">£20.25/month</h6>
                     <p class="PlansMain__Plans--Card__Body--Subtitle card-title">Ideal for start ups</p>
-                    <p class="PlansMain__Plans--Card__Body--Text card-text">Suitable for small companies with low compliance requirements and higher risk
+                    <p class="PlansMain__Plans--Card__Body--Text card-text">Suitable for small companies with low
+                        compliance requirements and higher risk
                         tolerance.</p>
                     <ul class="PlansMain__Plans--Card__Body--List card-text list-unstyled">
                         <li><span class="text-dark">&#10003;</span> Managed AntiVirus</li>
@@ -96,18 +116,22 @@
                         <li><span class="text-dark">&#10003;</span> Dark Web Scans</li>
                         <li><span class="text-dark">&#10003;</span> Minimum Security Support (8am - 6pm)</li>
                         <button class="PlansMain__Plans--Card__Body--Button card-buy rounded-pill"
-                            onclick="addToCart('Cipher Guard', 'This plan offers managed antivirus, web security, dark web scans, and minimum security support from 8am to 6pm, ideal for startups with low compliance requirements and higher risk tolerance.', 20.25, 'CipherGuard.png'); ">Buy
+                            onclick="addToCart('Cipher Guard', 'This plan offers managed antivirus, web security, dark web scans, and minimum security support from 8am to 6pm, ideal for startups with low compliance requirements and higher risk tolerance.', 20.25, 'CipherGuard.png');">Buy
                             Now</button>
                     </ul>
                 </div>
             </div>
+
+            <!-- Plan 2: Grid Sentinel -->
             <div class="PlansMain__Plans--Card card" style="width: 22rem; min-height: 35rem;">
-                <img src="/assets/images/GridSentinel.png" class="PlansMain__Plans--Photo card-photo" alt="Grid Sentinel Plan">
+                <img src="/assets/images/GridSentinel.png" class="PlansMain__Plans--Photo card-photo"
+                    alt="Grid Sentinel Plan">
                 <div class="PlansMain__Plans--Card__Body card-body text-start">
                     <h5 class="PlansMain__Plans--Card__Body--Title card-title">Grid Sentinel</h5>
                     <h6 class="PlansMain__Plans--Card__Body--Title card-title">£35.75/month</h6>
                     <p class="PlansMain__Plans--Card__Body--Subtitle card-title">For upto 20 Employees</p>
-                    <p class="PlansMain__Plans--Card__Body--Text card-text">Suitable for companies that have minor compliance needs and require a standard
+                    <p class="PlansMain__Plans--Card__Body--Text card-text">Suitable for companies that have minor
+                        compliance needs and require a standard
                     <p class="PlansMain__Plans--Card__Body--Title card-title">Everything in Previous Plan Plus</p>
                     <ul class="PlansMain__Plans--Card__Body--List card-text list-unstyled">
                         <li><span class="text-dark">&#10003;</span> EDR (Endpoint Detection and Response)</li>
@@ -118,13 +142,16 @@
                             Now</button>
                 </div>
             </div>
+
+            <!-- Plan 3: Fortress X -->
             <div class="PlansMain__Plans--Card card" style="width: 22rem; min-height: 35rem;">
                 <img src="/assets/images/FortressX.png" class="PlansMain__Plans--Photo card-photo" alt="FortressX Plan">
                 <div class="PlansMain__Plans--Card__Body card-body text-start">
                     <h5 class="PlansMain__Plans--Card__Body--Title card-title">Fortress X</h5>
                     <h6 class="PlansMain__Plans--Card__Body--Title card-title">£45.75/month</h6>
                     <p class="PlansMain__Plans--Card__Body--Subtitle card-title">For Upto 60 Employees</p>
-                    <p class="PlansMain__Plans--Card__Body--Text card-text">Suitable for companies with compliance needs requiring high levels of security
+                    <p class="PlansMain__Plans--Card__Body--Text card-text">Suitable for companies with compliance needs
+                        requiring high levels of security
                         with low risk tolerances.</p>
                     <p class="PlansMain__Plans--Card__Body--Title card-title">Everything in Previous Plan Plus</p>
                     <ul class="PlansMain__Plans--Card__Body--List card-text list-unstyled">
@@ -137,13 +164,17 @@
                             Now</button>
                 </div>
             </div>
+
+            <!-- Plan 4: HyperShield 360 -->
             <div class="PlansMain__Plans--Card card" style="width: 22rem; min-height: 35rem;">
-                <img src="/assets/images/HypershieldX.png" class="PlansMain__Plans--Photo card-photo" alt="HyperShield 360 Plan">
+                <img src="/assets/images/HypershieldX.png" class="PlansMain__Plans--Photo card-photo"
+                    alt="HyperShield 360 Plan">
                 <div class="PlansMain__Plans--Card__Body card-body text-start">
                     <h5 class="PlansMain__Plans--Card__Body--Title card-title">HyperShield 360</h5>
                     <h6 class="PlansMain__Plans--Card__Body--Title card-title">£155.75/month</h6>
                     <p class="PlansMain__Plans--Card__Body--Subtitle card-title">Enterprise Security Level</p>
-                    <p class="PlansMain__Plans--Card__Body--Text card-text">Suitable for larger organisations with need of enterprise levels of layered
+                    <p class="PlansMain__Plans--Card__Body--Text card-text">Suitable for larger organisations with need
+                        of enterprise levels of layered
                         security allowing for stringent levels of compliance to meet the most exacting guidelines.</p>
                     <p class="PlansMain__Plans--Card__Body--Title card-title">Everything in Previous Plan Plus</p>
                     <ul class="PlansMain__Plans--Card__Body--List card-text list-unstyled">
@@ -155,13 +186,17 @@
                             Now</button>
                 </div>
             </div>
+
+            <!-- Plan 5: Omega Defender -->
             <div class="PlansMain__Plans--Card card" style="width: 22rem; min-height: 35rem;">
-                <img src="/assets/images/OmegaDefender.png" class="PlansMain__Plans--Photo card-photo" alt="Omega Defender Plan">
+                <img src="/assets/images/OmegaDefender.png" class="PlansMain__Plans--Photo card-photo"
+                    alt="Omega Defender Plan">
                 <div class="PlansMain__Plans--Card__Body card-body text-start">
                     <h5 class="PlansMain__Plans--Card__Body--Title card-title">Omega Defender</h5>
                     <h6 class="PlansMain__Plans--Card__Body--Title card-title">£25.75/month</h6>
                     <p class="PlansMain__Plans--Card__Body--Subtitle card-title">For MS Business Premium users</p>
-                    <p class="PlansMain__Plans--Card__Body--Text card-text">For those clients that gain access to advanced EDR tools via Business Premium.
+                    <p class="PlansMain__Plans--Card__Body--Text card-text">For those clients that gain access to
+                        advanced EDR tools via Business Premium.
                     </p>
                     <ul class="PlansMain__Plans--Card__Body--List card-text list-unstyled">
                         <li><span class="text-dark">&#10003;</span> Managed AntiVirus</li>
@@ -177,13 +212,17 @@
                             Now</button>
                 </div>
             </div>
+
+            <!-- Plan 6: Titan Defense -->
             <div class="PlansMain__Plans--Card card" style="width: 22rem; min-height: 35rem;">
-                <img src="/assets/images/Titan Defense.png" class="PlansMain__Plans--Photo card-photo" alt="Titan Defense Plan">
+                <img src="/assets/images/Titan Defense.png" class="PlansMain__Plans--Photo card-photo"
+                    alt="Titan Defense Plan">
                 <div class="PlansMain__Plans--Card__Body card-body text-start">
                     <h5 class="PlansMain__Plans--Card__Body--Title card-title">Titan Defense</h5>
                     <h6 class="PlansMain__Plans--Card__Body--Title card-title">£45.75/month</h6>
                     <p class="PlansMain__Plans--Card__Body--Subtitle card-title">For MS Business Premium users</p>
-                    <p class="PlansMain__Plans--Card__Body--Text card-text">For clients using Microsoft Business Premium and requiring 24/7 SOC backed
+                    <p class="PlansMain__Plans--Card__Body--Text card-text">For clients using Microsoft Business Premium
+                        and requiring 24/7 SOC backed
                         support.</p>
                     <p class="PlansMain__Plans--Card__Body--Title card-title">Everything in Omega Defender Plus</p>
                     <ul class="PlansMain__Plans--Card__Body--List card-text list-unstyled">
@@ -196,17 +235,15 @@
                             Now</button>
                 </div>
             </div>
-
         </section>
-
-
     </section>
 
-
+    <!-- Footer -->
     <footer class="Universal-Footer mt-auto">
         <div class="Universal-Footer__Wrapper container-fluid">
             <a href="/index.html" class="Universal-Footer__Title">D.Roid Secure</a>
             <div class="Universal-Footer__Seperator"></div>
+            <!-- Footer links -->
             <ul class="Universal-Footer__Links list-unstyled">
                 <li class="Universal-Footer__Links--Item nav-item">
                     <a class="Universal-Footer__Links--Item__Link nav-link" id="Plans"
@@ -236,11 +273,12 @@
         <p class="Universal-Footer__Copyright text-center">© 2025 D.Roid. All Rights Reserved.</p>
     </footer>
 
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/utils.js"></script>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-<script src="/assets/js/main.js"></script>
-<script src="/assets/js/utils.js"></script>
 
 </html>

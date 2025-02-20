@@ -1,73 +1,83 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap'); /* Importing Google Fonts */
 
+/* Base styles for the body */
 body {
-    --text: #333333;
-    --background: #F8FAFC;
-    --primary: #0EA5E9;
-    --highlight: #0ea4e980;
-    background-color: var(--background);
-    color: var(--text);
-    font-family: 'Fira Code', monospace;
+    --text: #333333; /* Text color */
+    --background: #F8FAFC; /* Background color */
+    --primary: #0EA5E9; /* Primary color */
+    --highlight: #0ea4e980; /* Highlight color */
+    background-color: var(--background); /* Applying background color */
+    color: var(--text); /* Applying text color */
+    font-family: 'Fira Code', monospace; /* Applying font family */
 }
 
+/* Styles for dark mode */
 body.dark-mode {
-    --background: #333333;
-    --text: #F8FAFC;
-    --primary: #0EA5E9;
-    --highlight: #0ea4e980;
+    --background: #333333; /* Dark mode background color */
+    --text: #F8FAFC; /* Dark mode text color */
+    --primary: #0EA5E9; /* Primary color remains the same */
+    --highlight: #0ea4e980; /* Highlight color remains the same */
 }
 
+/* Styles for the hero section */
 .Universal__Hero {
-    background: url('/assets/images/Hero_about.jpg') center/cover no-repeat;
-    height: 400px;
-    background-attachment: fixed;
+    background: url('/assets/images/Hero_about.jpg') center/cover no-repeat; /* Background image with center alignment and cover */
+    height: 400px; /* Fixed height */
+    background-attachment: fixed; /* Fixed background attachment */
 }
 
+/* Initial styles for div elements inside AboutMain__Wrapper */
 .AboutMain__Wrapper div {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 1s ease-out, transform 1s ease-out;
+    opacity: 0; /* Initial opacity */
+    transform: translateY(30px); /* Initial transform */
+    transition: opacity 1s ease-out, transform 1s ease-out; /* Transition effects */
 }
 
+/* Styles for visible div elements inside AboutMain__Wrapper */
 .AboutMain__Wrapper div.visible {
-    opacity: 1;
-    transform: translateY(0);
+    opacity: 1; /* Visible opacity */
+    transform: translateY(0); /* Reset transform */
 }
 
+/* Styles for AboutMain-Section inside AboutMain__Wrapper */
 .AboutMain__Wrapper .AboutMain-Section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 30px;
-    padding-bottom: 50px;
+    display: flex; /* Flex display */
+    flex-direction: column; /* Column direction */
+    align-items: center; /* Center alignment */
+    padding-top: 30px; /* Top padding */
+    padding-bottom: 50px; /* Bottom padding */
 }
 
+/* Styles for all AboutMain-Section except the last one */
 .AboutMain__Wrapper .AboutMain-Section:not(:last-child) {
-    border-bottom: 2px solid var(--highlight);
+    border-bottom: 2px solid var(--highlight); /* Bottom border */
 }
 
+/* Styles for AboutMain-Section__Title inside AboutMain__Wrapper */
 .AboutMain__Wrapper .AboutMain-Section__Title {
-    font-size: 40px;
-    font-weight: bold;
-    margin: 30px;
-    font-family: 'Fira Code', monospace;
-    background: linear-gradient(-30deg, var(--primary), var(--highlight));
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    font-size: 40px; /* Font size */
+    font-weight: bold; /* Bold font weight */
+    margin: 30px; /* Margin */
+    font-family: 'Fira Code', monospace; /* Font family */
+    background: linear-gradient(-30deg, var(--primary), var(--highlight)); /* Gradient background */
+    background-clip: text; /* Clip background to text */
+    -webkit-text-fill-color: transparent; /* Transparent text fill color */
 }
 
+/* Styles for AboutMain-Section__Text inside AboutMain__Wrapper */
 .AboutMain__Wrapper .AboutMain-Section__Text {
-    font-size: 18px;
-    font-family: 'Fira Code', monospace;
-    margin: 15px;
-    color: var(--text);
+    font-size: 18px; /* Font size */
+    font-family: 'Fira Code', monospace; /* Font family */
+    margin: 15px; /* Margin */
+    color: var(--text); /* Text color */
 }
 
+/* Styles for AboutMain-Section__Sub-Title inside AboutMain__Wrapper */
 .AboutMain__Wrapper .AboutMain-Section__Sub-Title {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    font-family: 'Fira Code', monospace;
-    color: var(--highlight);
-    font-style: italic;
+    font-size: 20px; /* Font size */
+    font-weight: bold; /* Bold font weight */
+    margin-bottom: 20px; /* Bottom margin */
+    font-family: 'Fira Code', monospace; /* Font family */
+    color: var(--highlight); /* Highlight color */
+    font-style: italic; /* Italic font style */
 }

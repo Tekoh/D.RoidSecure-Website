@@ -1,58 +1,65 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap'); /* Importing Google Fonts */
 
+/* Base styles for the body */
 body {
-    --text: #333333;
-    --background: #F8FAFC;
-    --primary: #0EA5E9;
-    --highlight: #0ea4e980;
-    background-color: var(--background);
-    color: var(--text);
-    font-family: 'Fira Code', monospace;
+    --text: #333333; /* Text color */
+    --background: #F8FAFC; /* Background color */
+    --primary: #0EA5E9; /* Primary color */
+    --highlight: #0ea4e980; /* Highlight color */
+    background-color: var(--background); /* Applying background color */
+    color: var(--text); /* Applying text color */
+    font-family: 'Fira Code', monospace; /* Applying font family */
 }
 
+/* Styles for dark mode */
 body.dark-mode {
-    --background: #333333;
-    --text: #F8FAFC;
-    --primary: #0EA5E9;
-    --highlight: #0ea4e980;
+    --background: #333333; /* Dark mode background color */
+    --text: #F8FAFC; /* Dark mode text color */
+    --primary: #0EA5E9; /* Primary color */
+    --highlight: #0ea4e980; /* Highlight color */
 }
 
+/* Styles for the main emergency section */
 .EmergencyMain {
-    color: #ff0000;
-    margin-top: 50px;
-    margin-bottom: 150px;
+    color: #ff0000; /* Text color for emergency section */
+    margin-top: 50px; /* Top margin */
+    margin-bottom: 150px; /* Bottom margin */
 }
 
-
+/* Styles for the emergency title */
 .EmergencyMain .Emergency__Title {
-    font-size: 80px;
-    font-weight: 600;
-    border-bottom: 3px solid #ff0000;
-    margin-top: 80px;
+    font-size: 80px; /* Font size */
+    font-weight: 600; /* Font weight */
+    border-bottom: 3px solid #ff0000; /* Bottom border */
+    margin-top: 80px; /* Top margin */
 }
 
+/* Styles for the emergency subtitle */
 .EmergencyMain .Emergency__SubTitle {
-    font-size: 40px;
-    font-weight: 600;
-    margin-top: 40px;
+    font-size: 40px; /* Font size */
+    font-weight: 600; /* Font weight */
+    margin-top: 40px; /* Top margin */
 }
 
+/* Styles for the emergency text */
 .EmergencyMain .Emergency__Text {
-    font-size: 20px;
-    font-weight: 400;
-    margin-top: 20px;
+    font-size: 20px; /* Font size */
+    font-weight: 400; /* Font weight */
+    margin-top: 20px; /* Top margin */
 }
 
+/* Styles for the emergency subtext */
 .EmergencyMain .Emergency__SubText {
-    font-size: 14px;
-    font-weight: 400;
-    margin-top: 16px;
-    color: var(--text);
+    font-size: 14px; /* Font size */
+    font-weight: 400; /* Font weight */
+    margin-top: 16px; /* Top margin */
+    color: var(--text); /* Text color */
 }
 
+/* Media query for screens with max width of 100px */
 @media screen and (max-width: 100px) {
     .EmergencyMain {
-        margin-top: 20px;
-        margin-bottom: 50px;
+        margin-top: 20px; /* Top margin */
+        margin-bottom: 50px; /* Bottom margin */
     }
 }

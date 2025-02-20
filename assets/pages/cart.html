@@ -1,26 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <!-- Basic meta data and required tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Droid Secure | Checkout</title>
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="/assets/css/main.css">
     <link rel="stylesheet" href="/assets/css/cart.css">
 </head>
 
 <body>
+    <!-- Navbar -->
     <nav class="Universal-Navbar navbar navbar-expand-lg sticky-top">
         <div class="Universal-Navbar__Container container-fluid">
+            <!-- Logo and brand link -->
             <a class="Universal-Navbar__Logo navbar-logo" href="/index.html"></a>
             <a class="Universal-Navbar__Brand navbar-brand" href="/index.html">.Roid</a>
+            <!-- Mobile toggle button -->
             <button class="Universal-Navbar__Toggler navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <img src="/assets/icons/burger.png" alt="Icon For Mobile Devices">
             </button>
+            <!-- Navbar items -->
             <div class="Universal-Navbar__Collapse collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="Universal-Navbar__Nav navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="Universal-Navbar__Item nav-item">
@@ -35,26 +41,31 @@
                             href="/assets/pages/services.html">Services</a>
                     </li>
                     <li class="Universal-Navbar__Item nav-item">
-                        <a class="Universal-Navbar__Link nav-link" id="AboutUs" href="/assets/pages/about-us.html">About
-                            Us</a>
+                        <a class="Universal-Navbar__Link nav-link" id="AboutUs" href="/assets/pages/about-us.html">
+                            About Us</a>
                     </li>
                     <li class="Universal-Navbar__Item nav-item">
                         <a class="Universal-Navbar__Link nav-link" id="ContactUs"
                             href="/assets/pages/contact-us.html">Contact Us</a>
                     </li>
                 </ul>
+                <!-- Search form -->
                 <form class="Universal-Navbar__Search d-flex" role="search">
                     <input class="Universal-Navbar__Search--Bar nav-searchbar rounded-pill" type="search"
                         placeholder="Search">
                     <button class="Universal-Navbar__Search--Button nav-searchbutton rounded-pill"
                         type="submit">Search</button>
                 </form>
+                <!-- Cart and theme toggle buttons -->
                 <button class="Universal-Navbar__Cart" onclick="goCart()"></button>
                 <button class="Universal-Navbar__Theme" id="theme-toggle"></button>
             </div>
         </div>
     </nav>
+
+    <!-- Main cart section -->
     <section class="CartMain container-lg d-flex flex-column">
+        <!-- Overlay for errors and navigation -->
         <div class="Universal-Overlay">
             <p id="Universal-Overlay__ErrorField"></p>
             <button class="Universal-Overlay__HideButton rounded-pill" onclick="hideOverlay ()">Close</button>
@@ -63,6 +74,7 @@
         <p class="CartMain__Title">Droid Secure Checkout</p>
 
         <div class="CartMain__CartContainer d-flex flex-column">
+            <!-- Cart items table -->
             <div class="CartMain__ItemDescription d-flex flex-column">
                 <table>
                     <thead>
@@ -76,30 +88,33 @@
                     <tbody id="cart-items"></tbody>
                 </table>
             </div>
+            <!-- Form for user details -->
             <div class="CartMain__CartFrorm d-flex flex-column">
                 <p class="CartMain__CartFrom--Title">Enter Your Details</p>
                 <form id="checkout-form">
                     <div class="CartMain__CartFrom--TextWrapper">
-                        <input type="text" id="name-input" placeholder="Full Name"><br>
+                        <input type="text" id="name-input" placeholder="Full Name">
+                        <br>
                         <p id="name-error"></p>
                     </div>
                     <div class="CartMain__CartFrom--TextWrapper">
-                        <input type="email" id="email-input" placeholder="Email"><br>
+                        <input type="email" id="email-input" placeholder="Email">
+                        <br>
                         <p id="email-error"></p>
                     </div>
                     <div class="CartMain__CartFrom--TextWrapper">
-                        <input type="tel" id="phone-input" placeholder="Phone Number"><br>
+                        <input type="tel" id="phone-input" placeholder="Phone Number">
+                        <br>
                         <p id="phone-error"></p>
                     </div>
                     <button class="CartMain__CartFrom--Button" type="submit">Submit Order</button>
                     <p class="title fs-5">We will be in touch with you shortly.</p>
                 </form>
             </div>
-
-
         </div>
     </section>
 
+    <!-- Footer -->
     <footer class="Universal-Footer mt-auto">
         <div class="Universal-Footer__Wrapper container-fluid">
             <a href="/index.html" class="Universal-Footer__Title">D.Roid Secure</a>
@@ -119,8 +134,7 @@
                 </li>
                 <li class="Universal-Footer__Links--Item nav-item">
                     <a class="Universal-Footer__Links--Item__Link nav-link" id="AboutUs"
-                        href="/assets/pages/about-us.html">About
-                        Us</a>
+                        href="/assets/pages/about-us.html">About Us</a>
                 </li>
                 <li class="Universal-Footer__Links--Item nav-item">
                     <a class="Universal-Footer__Links--Item__Link nav-link" id="ContactUs"
@@ -133,14 +147,16 @@
         <p class="Universal-Footer__Copyright text-center">© 2025 D.Roid. All Rights Reserved.</p>
     </footer>
 
+    <!-- Bootstrap JS bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- Custom scripts -->
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/utils.js"></script>
+    <!-- Display cart content on load -->
+    <script>
+        displayCart();
+    </script>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-<script src="/assets/js/main.js"></script>
-<script src="/assets/js/utils.js"></script>
-<script>
-    displayCart();
-</script>
-
 </html>

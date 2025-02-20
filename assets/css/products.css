@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap'); /* Importing Google Fonts */
 
+/* Light mode styles */
 body {
     --text: #333333;
     --background: #F8FAFC;
@@ -10,6 +11,7 @@ body {
     font-family: 'Fira Code', monospace;
 }
 
+/* Dark mode styles */
 body.dark-mode {
     --background: #333333;
     --text: #F8FAFC;
@@ -17,31 +19,37 @@ body.dark-mode {
     --highlight: #0ea4e980;
 }
 
+/* Hero section styles */
 .Universal__Hero {
     background: url('/assets/images/Hero_Product.webp') center/cover no-repeat;
     height: 400px;
     background-attachment: fixed;
 }
 
+/* Initial state for product divs */
 .ProductsMain div {
     opacity: 0;
     transform: translateY(30px);
     transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
+/* Visible state for product divs */
 .ProductsMain div.visible {
     opacity: 1;
     transform: translateY(0);
 }
 
+/* Main products container padding */
 .ProductsMain .ProductsMain__Products {
     padding: 50px;
 }
 
+/* Border for all products except the last one */
 .ProductsMain .ProductsMain__Products:not(:last-child) {
     border-bottom: 2px solid var(--highlight);
 }
 
+/* Product header title styles */
 .ProductsMain .ProductsMain__Products .ProductsMain__Products--Header .ProductsMain__Products--Header__Title {
     font-size: 50px;
     font-weight: bold;
@@ -49,6 +57,7 @@ body.dark-mode {
     color: var(--primary);
 }
 
+/* Product header subtitle styles */
 .ProductsMain .ProductsMain__Products .ProductsMain__Products--Header .ProductsMain__Products--Header__SubTitle {
     font-size: 20px;
     font-weight: bolder;
@@ -57,6 +66,7 @@ body.dark-mode {
     padding: 10px;
 }
 
+/* Product card styles */
 .ProductsMain .ProductsMain__Products .ProductsMain__Products--Card {
     background-color: var(--text);
     color: var(--background);
@@ -70,18 +80,22 @@ body.dark-mode {
     justify-content: center;
 }
 
+/* Product card body padding */
 .ProductsMain .ProductsMain__Products .ProductsMain__Products--Card .ProductsMain__Products--CardBody-body {
     padding: 40px;
 }
 
+/* Product card title color */
 .ProductsMain .ProductsMain__Products .ProductsMain__Products--Card .ProductsMain__Products--CardTitle {
     color: var(--primary);
 }
 
+/* Product card subtitle color */
 .ProductsMain .ProductsMain__Products .ProductsMain__Products--Card .ProductsMain__Products--CardSubTitle {
     color: var(--highlight);
 }
 
+/* Buy button styles */
 .ProductsMain .ProductsMain__Products .ProductsMain__Products--Card .ProductsMain__Products--CardBuy {
     background-color: var(--primary);
     border: 1px solid var(--background);
@@ -92,12 +106,14 @@ body.dark-mode {
     right: 10px;
 }
 
+/* Buy button hover styles */
 .ProductsMain .ProductsMain__Products .ProductsMain__Products--Card .ProductsMain__Products--CardBuy:hover {
     background-color: var(--text);
-    color: var(--primary);
+    color: var (--primary);
     border: 1px solid var(--primary);
 }
 
+/* Product card photo styles */
 .ProductsMain .ProductsMain__Products .ProductsMain__Products--Card .ProductsMain__Products--CardPhoto {
     width: 100%;
     height: 200px;
@@ -106,6 +122,7 @@ body.dark-mode {
     border-top-right-radius: 8px;
 }
 
+/* Product card hover effect */
 .ProductsMain .ProductsMain__Products .ProductsMain__Products--Card:hover {
     transform: scale(1.025);
     transition: transform 0.35s;

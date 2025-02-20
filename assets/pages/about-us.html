@@ -1,27 +1,36 @@
 <!DOCTYPE html>
+<!-- The HTML5 doctype declaration -->
 <html lang="en">
-
 <head>
+    <!-- Character encoding and viewport settings for responsive design -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Droid Secure | About Droid</title>
+
+    <!-- Bootstrap CSS linking for layout and components -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Custom CSS files -->
     <link rel="stylesheet" href="/assets/css/main.css">
     <link rel="stylesheet" href="/assets/css/about-us.css">
 </head>
-
 <body>
-
+    <!-- Navigation bar -->
     <nav class="Universal-Navbar navbar navbar-expand-lg sticky-top">
         <div class="Universal-Navbar__Container container-fluid">
+            <!-- Logo and brand -->
             <a class="Universal-Navbar__Logo navbar-logo" href="/index.html"></a>
             <a class="Universal-Navbar__Brand navbar-brand" href="/index.html">.Roid</a>
+
+            <!-- Mobile menu toggle -->
             <button class="Universal-Navbar__Toggler navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <img src="/assets/icons/burger.png" alt="Icon For Mobile Devices">
             </button>
+
+            <!-- Collapsible menu links -->
             <div class="Universal-Navbar__Collapse collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="Universal-Navbar__Nav navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="Universal-Navbar__Item nav-item">
@@ -36,143 +45,92 @@
                             href="/assets/pages/services.html">Services</a>
                     </li>
                     <li class="Universal-Navbar__Item nav-item">
-                        <a class="Universal-Navbar__Link nav-link" id="AboutUs" href="/assets/pages/about-us.html">About
-                            Us</a>
+                        <a class="Universal-Navbar__Link nav-link" id="AboutUs" href="/assets/pages/about-us.html">About Us</a>
                     </li>
                     <li class="Universal-Navbar__Item nav-item">
                         <a class="Universal-Navbar__Link nav-link" id="ContactUs"
                             href="/assets/pages/contact-us.html">Contact Us</a>
                     </li>
                 </ul>
+                <!-- Search bar -->
                 <form class="Universal-Navbar__Search d-flex" role="search">
                     <input class="Universal-Navbar__Search--Bar nav-searchbar rounded-pill" type="search"
                         placeholder="Search">
                     <button class="Universal-Navbar__Search--Button nav-searchbutton rounded-pill"
                         type="submit">Search</button>
                 </form>
+                <!-- Shopping cart and theme toggle buttons -->
                 <button class="Universal-Navbar__Cart" onclick="goCart()"></button>
                 <button class="Universal-Navbar__Theme" id="theme-toggle"></button>
             </div>
         </div>
     </nav>
+
+    <!-- Main content section -->
     <section class="AboutMain">
+        <!-- Hero banner -->
         <section class="Universal__Hero">
             <div class="Universal__Hero--Overlay"></div>
             <h1 class="Universal__Hero--Text">What is Droid-Secure?</h1>
             <p class="Universal__Hero--SubText">Droid Secure offers Managed Cyber Security plans to meet the needs of security-conscious businesses.</p>
         </section>
+
+        <!-- Container for about content -->
         <section class="AboutMain__Wrapper container-lg d-flex flex-column text-center justify-content-center mx-auto">
+            <!-- "Who are we?" section -->
             <section class="AboutMain-Section">
                 <div class="AboutMain-Section__Title">Who are we?</div>
-                <div class="AboutMain-Section__Text">In today’s digital battlefield, cyber threats are evolving at an alarming rate,
-                    putting
-                    businesses and individuals at constant risk. Droid Secure, an advanced cybersecurity division of TnK
-                    Technologies Ltd., was created to do one thing—fortify the digital world against relentless cyber
-                    threats.</div>
-                <div class="AboutMain-Section__Text">We don’t just defend; we predict, neutralise, and outsmart attacks before they even
-                    happen. Backed
-                    by
-                    the expertise of TnK Technologies Ltd., our cybersecurity specialists deploy AI-driven threat
-                    intelligence, next-gen encryption, and real-time defence mechanisms to shield businesses from
-                    evolving
-                    risks.</div>
-                <div class="AboutMain-Section__Text">With a focus on penetration testing, vulnerability assessments, security
-                    consulting, and custom
-                    defence
-                    solutions, Droid Secure ensures that security isn’t just a feature—it’s a foundation. Whether you’re
-                    a
-                    startup, a growing enterprise, or a global corporation, we build ironclad digital infrastructures
-                    that
-                    can’t be breached.</div>
+                <div class="AboutMain-Section__Text">In today’s digital battlefield, cyber threats are evolving at an alarming rate...</div>
+                <div class="AboutMain-Section__Text">We don’t just defend; we predict, neutralise, and outsmart attacks before they even happen...</div>
+                <div class="AboutMain-Section__Text">With a focus on penetration testing, vulnerability assessments, security consulting...</div>
                 <div class="AboutMain-Section__Sub-Title">Powered by TnK Technologies Ltd. | Fortify. Defend. Dominate.</div>
             </section>
+
+            <!-- "What do we do?" section -->
             <section class="AboutMain-Section">
                 <div class="AboutMain-Section__Title">What do we do?</div>
-                <div class="AboutMain-Section__Text">Welcome to Droid Secure, the cybersecurity powerhouse under TnK Technologies Ltd.. In
-                    a
-                    world where cyber threats are evolving every second, we stand as the ultimate line of
-                    defence—predicting, preventing, and neutralising attacks before they strike.</div>
-                <div class="AboutMain-Section__Text">
-                    Our approach goes beyond traditional security. We combine cutting-edge AI-driven analytics, ethical
-                    hacking expertise, and real-time threat intelligence to create solutions that don’t just react to
-                    threats but eliminate them at their core.</div>
-                <div class="AboutMain-Section__Text"> Whether you need penetration testing, digital forensics,
-                    security consulting, or enterprise-grade defence systems, we craft tailored solutions that keep your
-                    business ahead of cyber adversaries.</div>
-                <div class="AboutMain-Section__Text">
-                    At Droid Secure, we believe cybersecurity isn’t just about protection—it’s about power. With us, you
-                    don’t just defend your data; you take control of your digital future.</div>
+                <div class="AboutMain-Section__Text">Welcome to Droid Secure, the cybersecurity powerhouse under TnK Technologies Ltd..</div>
+                <div class="AboutMain-Section__Text">Our approach goes beyond traditional security...</div>
+                <div class="AboutMain-Section__Text">Whether you need penetration testing, digital forensics...</div>
+                <div class="AboutMain-Section__Text">At Droid Secure, we believe cybersecurity isn’t just about protection—it’s about power.</div>
                 <div class="AboutMain-Section__Sub-Title">Stronger. Smarter. Unbreakable.</div>
             </section>
+
+            <!-- "Why we do it?" section -->
             <section class="AboutMain-Section">
                 <div class="AboutMain-Section__Title">Why we do it?</div>
-                <div class="AboutMain-Section__Text">At Droid Secure, our mission is simple yet unwavering: to create an impenetrable
-                    digital
-                    world where businesses and individuals operate without fear of cyber threats. As the dedicated
-                    cybersecurity division of TnK Technologies Ltd., we are driven by innovation, intelligence, and an
-                    unrelenting commitment to staying ahead of cybercriminals.</div>
-                <div class="AboutMain-Section__Text">
-                    We exist to predict, prevent, and eliminate cyber risks before they become a threat. By leveraging
-                    AI-driven defence systems, cutting-edge encryption, and ethical hacking expertise, we craft security
-                    solutions that don’t just react to cyberattacks—they neutralise them at their source.</div>
-                <div class="AboutMain-Section__Text">
-                    Cybersecurity isn’t an option—it’s a necessity. Our mission is to empower businesses with the
-                    strongest,
-                    smartest, and most adaptive security solutions, ensuring that no system, network, or data is left
-                    vulnerable.</div>
+                <div class="AboutMain-Section__Text">At Droid Secure, our mission is simple yet unwavering: to create an impenetrable digital world...</div>
+                <div class="AboutMain-Section__Text">We exist to predict, prevent, and eliminate cyber risks before they become a threat...</div>
+                <div class="AboutMain-Section__Text">Cybersecurity isn’t an option—it’s a necessity...</div>
                 <div class="AboutMain-Section__Sub-Title">With Droid Secure, your digital safety is never left to chance.</div>
             </section>
+
+            <!-- "How we do it?" section -->
             <section class="AboutMain-Section">
                 <div class="AboutMain-Section__Title">How we do it?</div>
-                <div class="AboutMain-Section__Text">Advanced Threat Intelligence – We leverage AI-powered analytics, real-time monitoring,
-                    and
-                    predictive modelling to detect and neutralise threats before they become a risk.
-                    Ethical Hacking & Penetration Testing – Our team of certified ethical hackers simulates real-world
-                    attacks to uncover vulnerabilities before malicious actors can exploit them.</div>
-                <div class="AboutMain-Section__Text">
-                    Custom Security Solutions – We design tailored cybersecurity frameworks based on your industry,
-                    infrastructure, and operational needs, ensuring seamless integration and maximum protection.
-                    Continuous Security Audits & Risk Assessments – Cyber threats evolve daily, which is why we
-                    regularly
-                    audit, test, and refine security measures to keep your defences ahead of attackers.</div>
-                <div class="AboutMain-Section__Text">
-                    AI-Driven Automation & Response – Our cutting-edge automated security systems detect anomalies,
-                    mitigate
-                    threats in real time, and eliminate risks with minimal human intervention.
-                    Compliance & Regulatory Assurance – We ensure that your systems meet global cybersecurity standards
-                    and
-                    compliance regulations, reducing legal risks while fortifying your security posture.
-                    Through a combination of cutting-edge technology, expert-driven strategies, and a relentless
-                    commitment
-                    to security, we provide unmatched protection for businesses of all sizes.</div>
+                <div class="AboutMain-Section__Text">Advanced Threat Intelligence – We leverage AI-powered analytics...</div>
+                <div class="AboutMain-Section__Text">Custom Security Solutions – We design tailored cybersecurity frameworks...</div>
+                <div class="AboutMain-Section__Text">AI-Driven Automation & Response – Our cutting-edge automated security systems detect anomalies...</div>
                 <div class="AboutMain-Section__Sub-Title">Droid Secure | Intelligent Defence. Unbreakable Security.</div>
             </section>
+
+            <!-- "Why us?" section -->
             <section class="AboutMain-Section">
                 <div class="AboutMain-Section__Title">Why us?</div>
-                <div class="AboutMain-Section__Text">Proactive, Not Reactive – We eliminate threats before they strike, ensuring your
-                    business
-                    stays steps ahead of cybercriminals.
-                    AI-Driven Security – Our advanced algorithms and machine learning systems constantly evolve to
-                    detect
-                    and counter the latest cyber threats.
-                    Custom-Tailored Solutions – No one-size-fits-all security—our strategies are engineered for your
-                    unique
-                    digital landscape.</div>
-                <div class="AboutMain-Section__Text">
-                    Enterprise-Grade Protection for All – Whether you’re a startup, SME, or a global corporation, we
-                    deliver
-                    unbreakable security without the enterprise price tag.
-                    Ethical Hacking Expertise – Our elite team of white-hat hackers and security analysts think like
-                    attackers, so we can stop them before they even begin.</div>
+                <div class="AboutMain-Section__Text">Proactive, Not Reactive – We eliminate threats before they strike...</div>
+                <div class="AboutMain-Section__Text">Enterprise-Grade Protection for All...</div>
                 <div class="AboutMain-Section__Sub-Title">Droid Secure | Smarter Security. Stronger Defence.</div>
             </section>
         </section>
     </section>
 
+    <!-- Footer section -->
     <footer class="Universal-Footer mt-auto">
         <div class="Universal-Footer__Wrapper container-fluid">
+            <!-- Footer brand -->
             <a href="/index.html" class="Universal-Footer__Title">D.Roid Secure</a>
             <div class="Universal-Footer__Seperator"></div>
+            <!-- Footer links -->
             <ul class="Universal-Footer__Links list-unstyled">
                 <li class="Universal-Footer__Links--Item nav-item">
                     <a class="Universal-Footer__Links--Item__Link nav-link" id="Plans"
@@ -188,8 +146,7 @@
                 </li>
                 <li class="Universal-Footer__Links--Item nav-item">
                     <a class="Universal-Footer__Links--Item__Link nav-link" id="AboutUs"
-                        href="/assets/pages/about-us.html">About
-                        Us</a>
+                        href="/assets/pages/about-us.html">About Us</a>
                 </li>
                 <li class="Universal-Footer__Links--Item nav-item">
                     <a class="Universal-Footer__Links--Item__Link nav-link" id="ContactUs"
@@ -197,16 +154,18 @@
                 </li>
             </ul>
             <div class="Universal-Footer__Seperator"></div>
+            <!-- Scroll to top button -->
             <a class="Universal-Footer__ScrollTop" onclick="ScrollTop()"></a>
         </div>
+        <!-- Copyright -->
         <p class="Universal-Footer__Copyright text-center">© 2025 D.Roid. All Rights Reserved.</p>
     </footer>
 
+    <!-- Bootstrap JS bundle and custom scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/utils.js"></script>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-<script src="/assets/js/main.js"></script>
-<script src="/assets/js/utils.js"></script>
-
 </html>

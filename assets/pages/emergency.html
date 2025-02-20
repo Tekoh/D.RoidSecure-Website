@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <!-- Meta Tags and Basic Setup -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Droid Secure | Emergency</title>
+    <!-- CSS Files -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="/assets/css/main.css">
@@ -12,7 +13,7 @@
 </head>
 
 <body>
-
+    <!-- Navbar Section -->
     <nav class="Universal-Navbar navbar navbar-expand-lg sticky-top">
         <div class="Universal-Navbar__Container container-fluid">
             <a class="Universal-Navbar__Logo navbar-logo" href="/index.html"></a>
@@ -24,37 +25,38 @@
             </button>
             <div class="Universal-Navbar__Collapse collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="Universal-Navbar__Nav navbar-nav me-auto mb-2 mb-lg-0">
+                    <!-- Navbar Links -->
                     <li class="Universal-Navbar__Item nav-item">
                         <a class="Universal-Navbar__Link nav-link" id="Plans" href="/assets/pages/plans.html">Plans</a>
                     </li>
                     <li class="Universal-Navbar__Item nav-item">
-                        <a class="Universal-Navbar__Link nav-link" id="Products"
-                            href="/assets/pages/products.html">Products</a>
+                        <a class="Universal-Navbar__Link nav-link" id="Products" href="/assets/pages/products.html">Products</a>
                     </li>
                     <li class="Universal-Navbar__Item nav-item">
-                        <a class="Universal-Navbar__Link nav-link" id="Services"
-                            href="/assets/pages/services.html">Services</a>
+                        <a class="Universal-Navbar__Link nav-link" id="Services" href="/assets/pages/services.html">Services</a>
                     </li>
                     <li class="Universal-Navbar__Item nav-item">
-                        <a class="Universal-Navbar__Link nav-link" id="AboutUs" href="/assets/pages/about-us.html">About
-                            Us</a>
+                        <a class="Universal-Navbar__Link nav-link" id="AboutUs" href="/assets/pages/about-us.html">About Us</a>
                     </li>
                     <li class="Universal-Navbar__Item nav-item">
-                        <a class="Universal-Navbar__Link nav-link" id="ContactUs"
-                            href="/assets/pages/contact-us.html">Contact Us</a>
+                        <a class="Universal-Navbar__Link nav-link" id="ContactUs" href="/assets/pages/contact-us.html">Contact Us</a>
                     </li>
                 </ul>
+                <!-- Search Form -->
                 <form class="Universal-Navbar__Search d-flex" role="search">
-                    <input class="Universal-Navbar__Search--Bar nav-searchbar rounded-pill" type="search"
-                        placeholder="Search">
-                    <button class="Universal-Navbar__Search--Button nav-searchbutton rounded-pill"
-                        type="submit">Search</button>
+                    <input class="Universal-Navbar__Search--Bar nav-searchbar rounded-pill" type="search" placeholder="Search">
+                    <button class="Universal-Navbar__Search--Button nav-searchbutton rounded-pill" type="submit">
+                        Search
+                    </button>
                 </form>
+                <!-- Cart and Theme Toggle Buttons -->
                 <button class="Universal-Navbar__Cart" onclick="goCart()"></button>
                 <button class="Universal-Navbar__Theme" id="theme-toggle"></button>
             </div>
         </div>
     </nav>
+
+    <!-- Emergency Main Section -->
     <section class="EmergencyMain container-lg d-flex flex-column text-center justify-content-center mx-auto">
         <div class="Emergency__Title">
             <p>CYBER ATTACK</p>
@@ -62,50 +64,49 @@
         </div>
         <p class="Emergency__SubTitle">WE CAN HELP!</p>
         <p class="Emergency__Text">CALL US NOW On 0161 XXX XXXX IF YOU THINK YOUR DIGITAL SECURITY HAS BEEN COMPROMISED!!</p>
-        <p class="Emergency__SubText">Do not email us as your email my have been compromised – it is important you contact us
-            immediately – even if you are unsure.</p>
-
+        <p class="Emergency__SubText">
+            Do not email us as your email my have been compromised – it is important you contact us
+            immediately – even if you are unsure.
+        </p>
     </section>
 
-
+    <!-- Footer Section -->
     <footer class="Universal-Footer mt-auto">
         <div class="Universal-Footer__Wrapper container-fluid">
             <a href="/index.html" class="Universal-Footer__Title">D.Roid Secure</a>
             <div class="Universal-Footer__Seperator"></div>
             <ul class="Universal-Footer__Links list-unstyled">
+                <!-- Footer Navigation Links -->
                 <li class="Universal-Footer__Links--Item nav-item">
-                    <a class="Universal-Footer__Links--Item__Link nav-link" id="Plans"
-                        href="/assets/pages/plans.html">Plans</a>
+                    <a class="Universal-Footer__Links--Item__Link nav-link" id="Plans" href="/assets/pages/plans.html">Plans</a>
                 </li>
                 <li class="Universal-Footer__Links--Item nav-item">
-                    <a class="Universal-Footer__Links--Item__Link nav-link" id="Products"
-                        href="/assets/pages/products.html">Products</a>
+                    <a class="Universal-Footer__Links--Item__Link nav-link" id="Products" href="/assets/pages/products.html">Products</a>
                 </li>
                 <li class="Universal-Footer__Links--Item nav-item">
-                    <a class="Universal-Footer__Links--Item__Link nav-link" id="Services"
-                        href="/assets/pages/services.html">Services</a>
+                    <a class="Universal-Footer__Links--Item__Link nav-link" id="Services" href="/assets/pages/services.html">Services</a>
                 </li>
                 <li class="Universal-Footer__Links--Item nav-item">
-                    <a class="Universal-Footer__Links--Item__Link nav-link" id="AboutUs"
-                        href="/assets/pages/about-us.html">About
-                        Us</a>
+                    <a class="Universal-Footer__Links--Item__Link nav-link" id="AboutUs" href="/assets/pages/about-us.html">About Us</a>
                 </li>
                 <li class="Universal-Footer__Links--Item nav-item">
-                    <a class="Universal-Footer__Links--Item__Link nav-link" id="ContactUs"
-                        href="/assets/pages/contact-us.html">Contact Us</a>
+                    <a class="Universal-Footer__Links--Item__Link nav-link" id="ContactUs" href="/assets/pages/contact-us.html">Contact Us</a>
                 </li>
             </ul>
             <div class="Universal-Footer__Seperator"></div>
+            <!-- Scroll-to-top Button -->
             <a class="Universal-Footer__ScrollTop" onclick="ScrollTop()"></a>
         </div>
-        <p class="Universal-Footer__Copyright text-center">© 2025 D.Roid. All Rights Reserved.</p>
+        <p class="Universal-Footer__Copyright text-center">
+            © 2025 D.Roid. All Rights Reserved.
+        </p>
     </footer>
 
+    <!-- JS Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/utils.js"></script>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-<script src="/assets/js/main.js"></script>
-<script src="/assets/js/utils.js"></script>
-
 </html>

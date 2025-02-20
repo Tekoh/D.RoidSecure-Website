@@ -1,149 +1,172 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap'); /* Importing Google Fonts */
 
+/* Base styles for the body */
 body {
-    --text: #333333;
-    --background: #F8FAFC;
-    --primary: #0EA5E9;
-    --highlight: #0ea4e980;
-    background-color: var(--background);
-    color: var(--text);
-    font-family: 'Fira Code', monospace;
+    --text: #333333; /* Text color */
+    --background: #F8FAFC; /* Background color */
+    --primary: #0EA5E9; /* Primary color */
+    --highlight: #0ea4e980; /* Highlight color */
+    background-color: var(--background); /* Setting background color */
+    color: var(--text); /* Setting text color */
+    font-family: 'Fira Code', monospace; /* Setting font family */
 }
 
+/* Dark mode styles for the body */
 body.dark-mode {
-    --background: #333333;
-    --text: #F8FAFC;
-    --primary: #0EA5E9;
-    --highlight: #0ea4e980;
+    --background: #333333; /* Dark mode background color */
+    --text: #F8FAFC; /* Dark mode text color */
+    --primary: #0EA5E9; /* Primary color */
+    --highlight: #0ea4e980; /* Highlight color */
 }
 
+/* Styles for the hero section */
 .Universal__Hero {
-    background: url('/assets/images/Hero_Services.png') center/cover no-repeat;
-    height: 400px;
-    background-attachment: fixed;
+    background: url('/assets/images/Hero_Services.png') center/cover no-repeat; /* Background image */
+    height: 400px; /* Height of the hero section */
+    background-attachment: fixed; /* Fixed background attachment */
 }
 
+/* Main services section styles */
 .ServicesMain {
-    font-family: 'Fira Code', monospace;
-    background-color: var(--background);
-    color: var(--text);
+    font-family: 'Fira Code', monospace; /* Setting font family */
+    background-color: var(--background); /* Setting background color */
+    color: var(--text); /* Setting text color */
 }
 
+/* Intro section styles */
 .ServicesMain .ServicesMain__Intro {
-    border-bottom: 2px solid var(--highlight);
-    padding: 50px;
+    border-bottom: 2px solid var(--highlight); /* Bottom border */
+    padding: 50px; /* Padding */
 }
 
+/* Title styles in the intro section */
 .ServicesMain .ServicesMain__Intro .ServicesMain__Intro--Title {
-    font-size: 40px;
-    font-weight: bold;
-    margin-bottom: 50px;
-    color: var(--primary);
+    font-size: 40px; /* Font size */
+    font-weight: bold; /* Font weight */
+    margin-bottom: 50px; /* Bottom margin */
+    color: var(--primary); /* Text color */
 }
 
+/* Subtitle styles in the intro section */
 .ServicesMain .ServicesMain__Intro .ServicesMain__Intro--SubTitle {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: var(--text);
+    font-size: 20px; /* Font size */
+    font-weight: bold; /* Font weight */
+    margin-bottom: 20px; /* Bottom margin */
+    color: var(--text); /* Text color */
 }
 
+/* Disclaimer styles in the intro section */
 .ServicesMain .ServicesMain__Intro .ServicesMain__Intro--Disclaimer {
-    font-size: 15px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: var(--text);
+    font-size: 15px; /* Font size */
+    font-weight: bold; /* Font weight */
+    margin-bottom: 20px; /* Bottom margin */
+    color: var(--text); /* Text color */
 }
 
+/* All services section styles */
 .ServicesMain .ServicesMain__AllServices {
-    margin-bottom: 150px;
+    margin-bottom: 150px; /* Bottom margin */
 }
 
+/* Initial state for service items */
 .ServicesMain .ServicesMain__AllServices div {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 1s ease-out, transform 1s ease-out;
+    opacity: 0; /* Initial opacity */
+    transform: translateY(30px); /* Initial transform */
+    transition: opacity 1s ease-out, transform 1s ease-out; /* Transition effects */
 }
 
+/* Visible state for service items */
 .ServicesMain .ServicesMain__AllServices div.visible {
-    opacity: 1;
-    transform: translateY(0);
+    opacity: 1; /* Visible opacity */
+    transform: translateY(0); /* Visible transform */
 }
 
+/* Individual service styles */
 .ServicesMain .ServicesMain__AllServices .ServicesMain__Services {
-    padding: 50px;
+    padding: 50px; /* Padding */
 }
 
+/* Border for all services except the last one */
 .ServicesMain .ServicesMain__AllServices .ServicesMain__Services:not(:last-child) {
-    border-bottom: 2px solid var(--highlight);
+    border-bottom: 2px solid var(--highlight); /* Bottom border */
 }
 
+/* Head section styles for each service */
 .ServicesMain .ServicesMain__AllServices .ServicesMain__Services .ServicesMain__Services--Head .ServicesMain__Services--Title {
-    font-size: 30px;
-    font-weight: bold;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    color: var(--primary);
+    font-size: 30px; /* Font size */
+    font-weight: bold; /* Font weight */
+    margin-top: 50px; /* Top margin */
+    margin-bottom: 50px; /* Bottom margin */
+    color: var(--primary); /* Text color */
 }
 
+/* Subtitle styles for each service */
 .ServicesMain .ServicesMain__AllServices .ServicesMain__Services .ServicesMain__Services--Head .ServicesMain__Services--SubTitle {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 50px;
-    color: var(--text);
+    font-size: 20px; /* Font size */
+    font-weight: bold; /* Font weight */
+    margin-bottom: 50px; /* Bottom margin */
+    color: var(--text); /* Text color */
 }
 
+/* Card styles for each service */
 .ServicesMain .ServicesMain__AllServices .ServicesMain__Services .ServicesMain__Services--Card {
-    background-color: var(--text);
-    color: var(--background);
-    border-radius: 10px;
-    border: 2px solid var(--primary);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    background-color: var(--text); /* Background color */
+    color: var(--background); /* Text color */
+    border-radius: 10px; /* Border radius */
+    border: 2px solid var(--primary); /* Border */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow */
+    margin: 20px; /* Margin */
+    display: flex; /* Flexbox display */
+    flex-direction: column; /* Column direction */
+    align-items: center; /* Center alignment */
+    justify-content: center; /* Center justification */
 }
 
+/* Card body styles */
 .ServicesMain .ServicesMain__AllServices .ServicesMain__Services .ServicesMain__Services--Card .ServicesMain__Services--Card__CardBody {
-    padding: 40px;
+    padding: 40px; /* Padding */
 }
 
+/* Card title styles */
 .ServicesMain .ServicesMain__AllServices .ServicesMain__Services .ServicesMain__Services--Card .ServicesMain__Services--Card__CardTitle {
-    color: var(--primary);
+    color: var(--primary); /* Text color */
 }
 
+/* Card subtitle styles */
 .ServicesMain .ServicesMain__AllServices .ServicesMain__Services .ServicesMain__Services--Card .ServicesMain__Services--Card__SubTitle {
-    color: var(--highlight);
+    color: var(--highlight); /* Text color */
 }
 
+/* Button styles in the card */
 .ServicesMain .ServicesMain__AllServices .ServicesMain__Services .ServicesMain__Services--Card .ServicesMain__Services--Card__Button {
-    background-color: var(--primary);
-    border: 1px solid var(--background);
-    color: var(--text);
-    padding: 2px 10px;
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
+    background-color: var(--primary); /* Background color */
+    border: 1px solid var(--background); /* Border */
+    color: var(--text); /* Text color */
+    padding: 2px 10px; /* Padding */
+    position: absolute; /* Absolute positioning */
+    bottom: 10px; /* Bottom position */
+    right: 10px; /* Right position */
 }
 
+/* Hover effect for the button */
 .ServicesMain .ServicesMain__AllServices .ServicesMain__Services .ServicesMain__Services--Card .ServicesMain__Services--Card__Button:hover {
-    background-color: var(--text);
-    color: var(--primary);
-    border: 1px solid var(--primary);
+    background-color: var(--text); /* Background color */
+    color: var(--primary); /* Text color */
+    border: 1px solid var(--primary); /* Border */
 }
 
+/* Photo styles in the card */
 .ServicesMain .ServicesMain__AllServices .ServicesMain__Services .ServicesMain__Services--Card .ServicesMain__Services--Card__Photo {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
+    width: 100%; /* Full width */
+    height: 200px; /* Fixed height */
+    object-fit: cover; /* Cover object fit */
+    border-top-left-radius: 8px; /* Top left border radius */
+    border-top-right-radius: 8px; /* Top right border radius */
 }
 
+/* Hover effect for the card */
 .ServicesMain .ServicesMain__AllServices .ServicesMain__Services .ServicesMain__Services--Card:hover {
-    transform: scale(1.025);
-    transition: transform 0.35s;
-    box-shadow: 10px 10px 10px rgba(51, 51, 51, 0.255);
+    transform: scale(1.025); /* Scale transform */
+    transition: transform 0.35s; /* Transition effect */
+    box-shadow: 10px 10px 10px rgba(51, 51, 51, 0.255); /* Box shadow */
 }

@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap'); /* Importing Google Fonts */
 
+/* Light mode styles */
 body {
     --text: #333333;
     --background: #F8FAFC;
@@ -10,6 +11,7 @@ body {
     font-family: 'Fira Code', monospace;
 }
 
+/* Dark mode styles */
 body.dark-mode {
     --background: #333333;
     --text: #F8FAFC;
@@ -17,14 +19,17 @@ body.dark-mode {
     --highlight: #0ea4e980;
 }
 
+/* Main container for the cart */
 .CartMain {
     min-height: 100vh;
 }
 
+/* Universal overlay styles */
 .CartMain .Universal-Overlay {
     display: none;
 }
 
+/* Active state for the universal overlay */
 .CartMain .Universal-Overlay.active {
     position: fixed;
     top: 0;
@@ -40,6 +45,7 @@ body.dark-mode {
     font-weight: 600;
 }
 
+/* Hide button styles */
 .CartMain .Universal-Overlay .Universal-Overlay__HideButton {
     background-color: var(--background);
     border: 1px solid var(--primary);
@@ -53,6 +59,7 @@ body.dark-mode {
     left: 50%;
 }
 
+/* Hover state for the hide button */
 .CartMain .Universal-Overlay .Universal-Overlay__HideButton:hover {
     background-color: var(--primary);
     border: 1px solid var(--background);
@@ -61,6 +68,7 @@ body.dark-mode {
     transition: ease-in 0.3s;
 }
 
+/* Home button styles */
 .CartMain .Universal-Overlay .Universal-Overlay__HomeButton {
     background-color: var(--background);
     border: 1px solid var(--primary);
@@ -74,6 +82,7 @@ body.dark-mode {
     left: 50%;
 }
 
+/* Hover state for the home button */
 .CartMain .Universal-Overlay .Universal-Overlay__HomeButton:hover {
     background-color: var(--primary);
     border: 1px solid var(--background);
@@ -82,6 +91,7 @@ body.dark-mode {
     transition: ease-in 0.3s;
 }
 
+/* Title styles for the cart main section */
 .CartMain .CartMain__Title {
     font-size: 40px;
     font-weight: 600;
@@ -92,6 +102,7 @@ body.dark-mode {
     color: var(--primary);
 }
 
+/* Item description styles */
 .CartMain .CartMain__ItemDescription {
     display: flex;
     justify-content: center;
@@ -100,6 +111,7 @@ body.dark-mode {
     margin: 50px;
 }
 
+/* Responsive styles for item description */
 @media screen and (max-width: 1000px) {
     .CartMain .CartMain__ItemDescription {
         font-size: 15px;
@@ -117,6 +129,7 @@ body.dark-mode {
     }
 }
 
+/* Table header styles */
 .CartMain .CartMain__ItemDescription th {
     padding: 10px;
     border: 1px solid var(--primary);
@@ -124,16 +137,19 @@ body.dark-mode {
     color: var(--text);
 }
 
+/* Table cell styles */
 .CartMain .CartMain__ItemDescription tbody tr td:not(:first-child) {
     padding: 20px;
 }
 
+/* Table cell styles */
 .CartMain .CartMain__ItemDescription tbody tr td {
     border: 1px solid var(--primary);
     background-color: var(--background);
     color: var(--text);
 }
 
+/* Cart form styles */
 .CartMain .CartMain__CartFrorm {
     display: flex;
     justify-content: center;
@@ -142,17 +158,20 @@ body.dark-mode {
     margin: 50px;
 }
 
+/* Responsive styles for cart form */
 @media screen and (max-width: 1000px) {
     .CartMain .CartMain__CartFrorm {
         margin: 10px;
     }
 }
 
+/* Text wrapper styles in cart form */
 .CartMain .CartMain__CartFrorm .CartMain__CartFrom--TextWrapper {
     padding: 5px;
     margin: 20px;
 }
 
+/* Input styles in cart form */
 .CartMain .CartMain__CartFrorm .CartMain__CartFrom--TextWrapper input {
     padding: 5px;
     margin: 10px;
@@ -163,17 +182,20 @@ body.dark-mode {
     width: 500px;
 }
 
+/* Responsive styles for input in cart form */
 @media screen and (max-width: 1000px) {
     .CartMain .CartMain__CartFrorm .CartMain__CartFrom--TextWrapper input {
         width: 90%;
     }
 }
 
+/* Focus state for input in cart form */
 .CartMain .CartMain__CartFrorm .CartMain__CartFrom--TextWrapper input:focus {
     background-color: var(--text);
     color: var(--background);
 }
 
+/* Title styles in cart form */
 .CartMain .CartMain__CartFrorm .CartMain__CartFrom--Title {
     font-size: 30px;
     font-weight: 600;
@@ -184,16 +206,18 @@ body.dark-mode {
     color: var(--primary);
 }
 
+/* Button styles in cart form */
 .CartMain .CartMain__CartFrorm .CartMain__CartFrom--Button {
     background-color: var(--background);
     border: 1px solid var(--primary);
-    color: var(--text);
+    color: var (--text);
     padding: 2px 10px;
     border-radius: 16px;
     transition: ease-in 0.3s;
     width: 150px;
 }
 
+/* Hover state for button in cart form */
 .CartMain .CartMain__CartFrorm .CartMain__CartFrom--Button:hover {
     background-color: var(--primary);
     border: 1px solid var(--background);
@@ -202,6 +226,7 @@ body.dark-mode {
     transition: ease-in 0.3s;
 }
 
+/* Responsive styles for hide button in universal overlay */
 @media screen and (max-width: 1000px) {
     .CartMain .Universal-Overlay .Universal-Overlay__HideButton {
         bottom: 30%;

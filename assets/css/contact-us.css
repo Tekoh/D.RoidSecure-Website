@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap'); /* Importing Google Fonts */
 
+/* Default light mode styles */
 body {
     --text: #333333;
     --background: #F8FAFC;
@@ -10,6 +11,7 @@ body {
     font-family: 'Fira Code', monospace;
 }
 
+/* Dark mode styles */
 body.dark-mode {
     --background: #333333;
     --text: #F8FAFC;
@@ -17,17 +19,20 @@ body.dark-mode {
     --highlight: #0ea4e980;
 }
 
+/* Main container for contact section */
 .ContactMain {
     display: flex;
     flex-direction: column;
 }
 
+/* Wrapper for contact section content */
 .ContactMain .ContactMain__Wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
 
+/* Text section within contact wrapper */
 .ContactMain .ContactMain__Wrapper .Contact__Wrapper--Text {
     display: flex;
     flex-direction: column;
@@ -36,6 +41,7 @@ body.dark-mode {
     margin-top: 3rem;
 }
 
+/* Title within text section */
 .ContactMain .ContactMain__Wrapper .Contact__Wrapper--Text .Contact__Title {
     font-size: 2.5rem;
     font-weight: bold;
@@ -43,6 +49,7 @@ body.dark-mode {
     color: var(--primary);
 }
 
+/* Subtitle within text section */
 .ContactMain .ContactMain__Wrapper .Contact__Wrapper--Text .Contact__Sub-Title {
     font-size: 1.25rem;
     font-weight: bold;
@@ -51,12 +58,14 @@ body.dark-mode {
     margin-top: 5rem;
 }
 
+/* Body text within text section */
 .ContactMain .ContactMain__Wrapper .Contact__Wrapper--Text .Contact__Body {
     font-size: 1.1rem;
     margin-bottom: 1.25rem;
     color: var(--text);
 }
 
+/* Form section within contact wrapper */
 .ContactMain .ContactMain__Wrapper .Contact__Form {
     display: flex;
     flex-direction: column;
@@ -64,10 +73,12 @@ body.dark-mode {
     margin: 2rem;
 }
 
+/* Wrapper for form elements */
 .ContactMain .ContactMain__Wrapper .Contact__Form .Contact__Form--Wrapper {
     display: inline-flex;
 }
 
+/* Title within form section */
 .ContactMain .ContactMain__Wrapper .Contact__Form .Contact__Form--Title {
     font-size: 2rem;
     font-weight: bold;
@@ -77,7 +88,7 @@ body.dark-mode {
     margin-bottom: 5rem;
 }
 
-
+/* Input fields within form section */
 .ContactMain .ContactMain__Wrapper .Contact__Form input {
     background-color: var(--background);
     border: 1px solid var(--primary);
@@ -86,6 +97,7 @@ body.dark-mode {
     margin: 1rem;
 }
 
+/* Textarea within form section */
 .ContactMain .ContactMain__Wrapper .Contact__Form textarea {
     background-color: var(--background);
     border: 1px solid var(--primary);
@@ -97,6 +109,7 @@ body.dark-mode {
     transition: ease-in 0.3s;
 }
 
+/* Focus state for input and textarea */
 .ContactMain .ContactMain__Wrapper .Contact__Form textarea:focus,
 .ContactMain .ContactMain__Wrapper .Contact__Form input:focus {
     background-color: var(--highlight);
@@ -105,16 +118,19 @@ body.dark-mode {
     transition: ease-in 0.3s;
 }
 
+/* Placeholder text color */
 .ContactMain .ContactMain__Wrapper .Contact__Form input::placeholder,
 .ContactMain .ContactMain__Wrapper .Contact__Form textarea::placeholder {
     color: var(--highlight);
 }
 
+/* Placeholder text color on focus */
 .ContactMain .ContactMain__Wrapper .Contact__Form input:focus::placeholder,
 .ContactMain .ContactMain__Wrapper .Contact__Form textarea:focus::placeholder {
     color: var(--text);
 }
 
+/* Button within form section */
 .ContactMain .ContactMain__Wrapper .Contact__Form button {
     background-color: var(--background);
     border: 1px solid var(--primary);
@@ -126,6 +142,7 @@ body.dark-mode {
     transition: ease-in 0.3s;
 }
 
+/* Hover state for button */
 .ContactMain .ContactMain__Wrapper .Contact__Form button:hover {
     background-color: var(--primary);
     border: 1px solid var(--background);
@@ -133,6 +150,7 @@ body.dark-mode {
     transition: ease-in 0.3s;
 }
 
+/* Tagline within contact section */
 .ContactMain .Contact__Tagline {
     font-size: 1.25rem;
     font-weight: bold;
@@ -142,7 +160,7 @@ body.dark-mode {
     align-self: center;
 }
 
-
+/* Error messages within form section */
 .ContactMain .ContactMain__Wrapper .Contact__Form .Contact__Form--errors {
     font-size: 1rem;
     font-weight: bold;
@@ -152,10 +170,12 @@ body.dark-mode {
     padding: 0.125rem 0.625rem;
 }
 
+/* Universal overlay styles */
 .Universal-Overlay {
     display: none;
 }
 
+/* Active state for universal overlay */
 .Universal-Overlay.active {
     position: fixed;
     top: 0;
@@ -169,9 +189,9 @@ body.dark-mode {
     z-index: 1000;
     font-size: 30px;
     font-weight: 600;
-
 }
 
+/* Hide button within universal overlay */
 .Universal-Overlay .Universal-Overlay__HideButton {
     background-color: var(--background);
     border: 1px solid var(--primary);
@@ -183,9 +203,9 @@ body.dark-mode {
     position: fixed;
     bottom: 40%;
     left: 50%;
-
 }
 
+/* Hover state for hide button */
 .Universal-Overlay .Universal-Overlay__HideButton:hover {
     background-color: var(--primary);
     border: 1px solid var(--background);
@@ -194,6 +214,7 @@ body.dark-mode {
     transition: ease-in 0.3s;
 }
 
+/* Home button within universal overlay */
 .Universal-Overlay .Universal-Overlay__HomeButton {
     background-color: var(--background);
     border: 1px solid var(--primary);
@@ -205,16 +226,18 @@ body.dark-mode {
     position: fixed;
     bottom: 30%;
     left: 50%;
-
 }
+
+/* Hover state for home button */
 .Universal-Overlay .Universal-Overlay__HomeButton:hover {
     background-color: var(--primary);
     border: 1px solid var(--background);
-    color: var(--background);
+    color: var (--background);
     padding: 2px 10px;
     transition: ease-in 0.3s;
 }
 
+/* Responsive styles for screens smaller than 1000px */
 @media screen and (max-width: 1000px) {
     .ContactMain .ContactMain__Wrapper {
         flex-direction: column;
@@ -237,5 +260,4 @@ body.dark-mode {
         bottom: 30%;
         left: 10%;
     }
-
 }
